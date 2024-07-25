@@ -17,6 +17,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setSentMessage('Sending...')
 
     emailjs
       .sendForm(
@@ -78,9 +79,9 @@ const Contact = () => {
       <div className="formContainer">
         <motion.form ref={formRef} onSubmit={sendEmail}>
           <input type="text" placeholder="Name" name="from_name" onChange={(e)=>setFormName(e.target.value)} value={formName} />
-          <input type="email" required placeholder="Email" name="email" onChange={(e)=>setFormEmail(e.target.value)} value={formEmail} />
+          <input type="email" required placeholder="Email" name="sender_email" onChange={(e)=>setFormEmail(e.target.value)} value={formEmail} />
           <textarea rows={8} placeholder="Message" name="message" onChange={(e)=>setFormMessage(e.target.value)} value={formMessage} />
-          <button type="submit">Submit</button>
+          <button type="submit" >Submit</button>
           {/* {sent ? (error ? "<h2>Message Failed</h2>" : "Message Sent Successfully") : " "} */}
           <h3 style={{color:msgColor}}>{sentMessage}</h3>
         </motion.form>
