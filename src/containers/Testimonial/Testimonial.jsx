@@ -118,7 +118,7 @@ const Testimonial = () => {
             transition={{ duration: 0.5, type: 'tween' }}
             key={brand._id}
           >
-            <img style={{backgroundColor:'#1c069c17',borderRadius:'10px'}} src={brand.imgUrl} alt={brand.name} />
+            <img style={{backgroundColor:'#e3e3e3',borderRadius:'10px' ,padding:1}} src={brand.imgUrl} alt={brand.name} />
           </motion.div>
         ))}
       </div>
