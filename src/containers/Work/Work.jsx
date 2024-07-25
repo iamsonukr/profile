@@ -48,7 +48,7 @@ const Work = () => {
       },
       {
         id: 4,
-        imgUrl: '../../../public/assets/websites/ashwinkar.png',
+        imgUrl: './assets/websites/ashwinkar.png',
         name: 'ashwinkar',
         projectLink: 'https://aswinikar.com/',
         codeLink: 'https://aswinikar.com/',

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { AppWrap, MotionWrap } from '../../wrapper';
 import './Testimonial.scss';
-import '../../../public/assets/companies/logo-isdg.png'
+
 
 const Testimonial = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,22 +43,22 @@ const Testimonial = () => {
   const sampleBrands = [
     {
       _id: '1',
-      imgUrl: '../../../public/assets/companies/logo-isdg.png',
+      imgUrl: './assets/companies/logo-isdg.png',
       name: 'ISDG',
     },
     {
       _id: '2',
-      imgUrl: '../../../public/assets/companies/logo-baskethunt.png',
+      imgUrl: './assets/companies/logo-baskethunt.png',
       name: 'Baskethunt Pvt Lmtd',
     },
     {
       _id: '3',
-      imgUrl: '../../../public/assets/companies/logo-svapak.png',
+      imgUrl: './assets/companies/logo-svapak.png',
       name: 'Svapak Digital Solution',
     },
     {
       _id: '4',
-      imgUrl: '../../../public/assets/companies/logo-outgrowth.png',
+      imgUrl: './assets/companies/logo-outgrowth.png',
       name: 'Outgrowth',
     },
     // {
