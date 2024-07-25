@@ -319,7 +319,7 @@ const Work = () => {
         name: 'spaceportfolio',
         projectLink: 'https://space-portfolio-pink.vercel.app/',
         codeLink: 'https://github.com/iamsonukr/Space-Portfolio-React-Raw',
-        title: 'Tomato - Order Your food Online',
+        title: 'Portfolio using Framer-Motion',
         tags: ['Set C', 'spaceportfolio'],
         description: 'This is a portfolio website which is build on react and used framer-motion for animation.',
       },
