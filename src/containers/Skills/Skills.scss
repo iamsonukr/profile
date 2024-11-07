@@ -25,6 +25,48 @@
   align-items: flex-start;
 
   margin-right: 5rem;
+  z-index: 2;
+//   .testing-gray-parent{
+//     position: relative;
+//   }
+
+//   @property --angle{
+//     syntax: "<angle>";
+//     initial-value: 0deg;
+//     inherits: false;
+//   }
+
+// .testing-gray-parent::after, .testing-gray-parent::before{
+//   --angle:0deg;
+//   content: '';
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   background-image: conic-gradient(from var(--angle), transparent 50%,blue);
+//   top: 50%;
+//   left: 50%;;
+//   translate: -50% -50%;
+//   z-index: -1;
+//   border-radius: 50%;
+//   padding: 2px;
+//   animation: spin 3s ease-in-out infinite;
+// }
+// .testing-gray-parent::before{
+//   filter: blur(0.5rem);
+//   opacity: 0.5;
+// }
+// @keyframes spin{
+//   from {
+//     background-image: conic-gradient(0deg, transparent 50%,blue);
+    
+//     // --angle:90deg;
+//   }
+//   to{
+//     background-image: conic-gradient(360deg, transparent 50%,blue);
+//     // --andgle:30deg;
+//   }
+// }
+
 
   @media screen and (max-width: 900px) {
     margin-right: 0;

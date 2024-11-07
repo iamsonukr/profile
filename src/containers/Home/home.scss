@@ -69,6 +69,8 @@
             flex: 1;
             img{
                 width:400px;
+                border-radius: 15% 0 15% 0;
+                box-shadow: 15px 15px 10px #313bac ;
                 @media (max-width:720px) {
                     width: 300px;
                 }

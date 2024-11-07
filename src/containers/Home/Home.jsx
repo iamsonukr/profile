@@ -74,7 +74,7 @@ const Home = () => {
           <TrackVisibility>
             {({ isVisible }) =>
               <div className="profile-image">
-                <img src='./assets/hero2.png' alt="Header Img" />
+                <img src='./assets/heroArt.png' alt="Header Img" />
               </div>
             }
           </TrackVisibility>

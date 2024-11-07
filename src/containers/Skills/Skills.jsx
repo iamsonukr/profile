@@ -187,10 +187,10 @@ const Skills = () => {
               key={skill.name}
             >
               <div
-                className="app__flex"
+                className="app__flex testing-gray-parent"
                 style={{ backgroundColor: skill.bgColor }}
               >
-                <img src={skill.icon} alt={skill.name} />
+                <img className='testing-gray-child'  src={skill.icon} alt={skill.name} />
                 {/* <img src={skill.icon} alt={skill.name} /> */}
                 {/* <img alt={skill.name} /> */}
               </div>
