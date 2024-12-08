@@ -4,7 +4,9 @@ import { Navbar } from './components';
 import { About,Skills, Testimonial,Work,Home,Contact } from './containers';
 // import Contact from './containers/Contact/Contact';
 import Footer from './components/Footer/Footer';
-
+// import PortfolioSlider from './components/Slider/PortfolioSlider.jsx'
+import Story from './containers/Story/Story.jsx';
+import SliderStory from './SliderStory/SliderStory.jsx';
 
 
 function App() {
@@ -14,12 +16,18 @@ function App() {
     <>
     <Navbar/>
     <Home/>
+ 
     <About/>
     <Work/>
     <Skills/>
     <Testimonial/>
+    {/* <PortfolioSlider/> */}
+    <Story/>
     <Contact/>
+    {/* <Slider/> */}
+    {/* <SliderStory/> */}
     <Footer/>
+
     </>
   )
 }

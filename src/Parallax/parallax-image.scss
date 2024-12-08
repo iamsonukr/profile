@@ -1,0 +1,69 @@
+// Parallax Hover Effect SCSS
+@mixin transition-smooth {
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .profile-image {
+    // Container setup for parallax effect
+    position: relative;
+    // width: 300px;
+    // height: 300px;
+    perspective: 1000px;
+    overflow: hidden;
+    border-radius: 16px;
+    
+    // Create a pseudo-element for depth effect
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.05);
+      opacity: 0;
+      z-index: 1;
+      @include transition-smooth;
+      pointer-events: none;
+    }
+  
+    // The image itself
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform-origin: center;
+      @include transition-smooth;
+    }
+  
+    // Hover state
+    &:hover {
+      // Depth and tilt effect
+      img {
+        transform: 
+          scale(1.1) 
+          rotateX(var(--rotate-x, 0)) 
+          rotateY(var(--rotate-y, 0))
+          translateZ(50px);
+      }
+  
+      // Darken overlay on hover
+      &::before {
+        opacity: 0.2;
+      }
+    }
+  
+    // Responsive adjustments
+    // @media (max-width: 768px) {
+    //   width: 250px;
+    //   height: 250px;
+    // }
+  
+    // @media (max-width: 480px) {
+    //   width: 200px;
+    //   height: 200px;
+    // }
+  }
+  
+  // JavaScript will dynamically set these variables
+  // This CSS prepares the ground for the interactive parallax effect

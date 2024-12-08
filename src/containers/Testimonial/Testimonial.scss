@@ -38,6 +38,8 @@
 
   @media screen and (max-width: 850px) {
     width: 100%;
+
+    
   }
 
   @media screen and (max-width: 600px) {
@@ -125,6 +127,8 @@
   }
 }
 
+
+
 .app__testimonial-brands {
   width: 80%;
   flex-wrap: wrap;
@@ -135,10 +139,22 @@
     border-radius: 100px;
   }
   
+  
 
   div {
     width: 150px;
     margin: 1.5rem;
+    &:hover{
+      // border: 100px solid black;
+    
+      box-shadow: 
+      10px 10px 10px rgba(0, 0, 0, 0.15),  // Shadow from bottom-right (light black)
+      -10px -10px 10px rgba(0, 0, 0, 0.15), // Shadow from top-left (light black)
+      10px -10px 10px rgba(0, 0, 0, 0.1),  // Shadow from bottom-left (slightly darker)
+      -10px 10px 10px rgba(0, 0, 0, 0.1);  // Shadow from top-right (slightly darker)
+    
+    
+    }
 
     img {
       width: 100%;
@@ -166,5 +182,12 @@
 
   @media screen and (max-width: 800px) {
     width: 100%;
+  }
+}
+
+@media (max-width:700px) {
+  .app__testimonial-item{
+    flex-direction: column;
+    gap: 20px;
   }
 }

@@ -2,6 +2,7 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
+  
 }
 
 .app__skills-container {
@@ -10,6 +11,7 @@
 
   display: flex;
   flex-direction: row;
+
 
   @media screen and (max-width: 900px) {
     width: 100%;
@@ -26,46 +28,9 @@
 
   margin-right: 5rem;
   z-index: 2;
-//   .testing-gray-parent{
-//     position: relative;
-//   }
-
-//   @property --angle{
-//     syntax: "<angle>";
-//     initial-value: 0deg;
-//     inherits: false;
-//   }
-
-// .testing-gray-parent::after, .testing-gray-parent::before{
-//   --angle:0deg;
-//   content: '';
-//   position: absolute;
-//   height: 100%;
-//   width: 100%;
-//   background-image: conic-gradient(from var(--angle), transparent 50%,blue);
-//   top: 50%;
-//   left: 50%;;
-//   translate: -50% -50%;
-//   z-index: -1;
-//   border-radius: 50%;
-//   padding: 2px;
-//   animation: spin 3s ease-in-out infinite;
-// }
-// .testing-gray-parent::before{
-//   filter: blur(0.5rem);
-//   opacity: 0.5;
-// }
-// @keyframes spin{
-//   from {
-//     background-image: conic-gradient(0deg, transparent 50%,blue);
-    
-//     // --angle:90deg;
-//   }
-//   to{
-//     background-image: conic-gradient(360deg, transparent 50%,blue);
-//     // --andgle:30deg;
-//   }
-// }
+  .testing-gray-parent{
+    position: relative;
+  }
 
 
   @media screen and (max-width: 900px) {
@@ -200,5 +165,73 @@
     font-size: 1.75rem !important;
     max-width: 500px !important;
     line-height: 2 !important;
+  }
+}
+
+
+// ---------------------------TEsting zone - --------
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.testing-gray-parent {
+  position: relative;
+}
+
+/* Hide pseudo-elements by default */
+.testing-gray-parent::before,
+.testing-gray-parent::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  // background: conic-gradient(from var(--angle), red 25%, blue, rgb(0, 0, 0), yellow);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  background: conic-gradient(from var(--angle),
+  #4776E6 25%,
+  #8E54E9 50%,
+  #FF54B0 25%,
+  #4776E6
+);
+}
+
+.testing-gray-parent::before {
+  filter: blur(0.5rem);
+  opacity: 0;
+}
+
+/* Show animation only on hover */
+.testing-gray-parent:hover::before,
+.testing-gray-parent:hover::after {
+  opacity: 1;
+  animation: rotate 3s linear infinite;
+}
+
+.testing-gray-parent:hover::before {
+  opacity: 0.5;
+}
+/* Show animation always */
+// .testing-gray-parent::before,
+// .testing-gray-parent::after {
+//   opacity: 1;
+//   animation: rotate 3s linear infinite;
+// }
+
+// .testing-gray-parent::before {
+//   opacity: 0.5;
+// }
+
+@keyframes rotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
   }
 }

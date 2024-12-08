@@ -1,0 +1,113 @@
+// Color Variables
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$accent-color: #34495e;
+$text-color: #333;
+$light-background: #f4f6f7;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 
+    0 4px 16px 0 rgba(31, 38, 135, 0.07),
+    0 2px 8px 0 rgba(0, 0, 0, 0.07);
+}
+
+// Stats Section Styles
+.stats {
+  @include flex-center;
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+//   max-width: 1000px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .stat-item {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+    width: 180px;
+    @include glass-effect;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 
+        0 6px 21px rgba(0, 0, 0, 0.1),
+        0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .icon-wrapper {
+      @include flex-center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba($primary-color, 0.1);
+      margin-bottom: 0.5rem;
+      transition: transform 0.3s ease;
+
+      .stat-icon {
+        color: $primary-color;
+        width: 25px;
+        height: 25px;
+        stroke-width: 1.5;
+        transition: all 0.3s ease;
+      }
+    }
+
+    .counter {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $secondary-color;
+      margin-bottom: 0.3rem;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 3px;
+        background: $primary-color;
+        opacity: 0.7;
+      }
+    }
+
+    p {
+      font-size: 0.8rem;
+      color: $accent-color;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+
+    // Hover animations
+    &:hover {
+      .icon-wrapper {
+        transform: rotate(15deg);
+
+        .stat-icon {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #f5f5f5;
+
+  
+    &__container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  
+    &__item {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    &__loading {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.9);
+      font-size: 1.2rem;
+      z-index: 2;
+    }
+  
+    &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+  
+      &.loaded {
+        opacity: 1;
+      }
+    }
+  
+    &__title {
+      align-items: center;
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      width: 70%;
+      text-align: center;
+      color: white;
+      font-size: 1rem;
+      padding: 1rem;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(5px);
+      z-index: 1;
+      margin: auto;
+      left: 15%;
+
+    }
+  
+    &__button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.8);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: #333;
+      z-index: 2;
+      transition: all 0.3s ease;
+  
+      &:hover {
+        background: rgba(255, 255, 255, 0.9);
+        transform: translateY(-50%) scale(1.1);
+      }
+  
+      &--prev {
+        left: 20px;
+      }
+  
+      &--next {
+        right: 20px;
+      }
+    }
+  
+    &__dots {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      z-index: 2;
+    }
+  
+    &__dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+  
+      &.active {
+        background: rgb(49, 0, 184);
+        transform: scale(1.2);
+      }
+  
+      &:hover {
+        background: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+
+
+
+  

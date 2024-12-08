@@ -69,8 +69,8 @@
             flex: 1;
             img{
                 width:400px;
-                border-radius: 15% 0 15% 0;
-                box-shadow: 15px 15px 10px #313bac ;
+                // border-radius: 15% 0 15% 0;
+                // box-shadow: 15px 15px 10px #313bac ;
                 @media (max-width:720px) {
                     width: 300px;
                 }
@@ -151,4 +151,16 @@
 
 .txt-rotate>.wrap {
     border-right: 0.08em solid #666;
+}
+
+//-------------------------------------- TESTING ZONE -------------------------------------
+
+.profile-image:hover{
+    
+    box-shadow: 
+    20px 20px 20px rgba(29, 3, 135, 0.15),  // Shadow from bottom-right (light black)
+    -20px -20px 20px rgba(29, 3, 135, 0.15), // Shadow from top-left (light black)
+    20px -20px 20px rgba(29, 3, 135, 0.15),  // Shadow from bottom-left (slightly darker)
+    -20px 20px 20px rgba(29, 3, 135, 0.15);  // Shadow from top-right (slightly darker)
+    // box-shadow: 30px 30px 60px #f7959575, -30px -30px 60px #a876ff83;
 }
