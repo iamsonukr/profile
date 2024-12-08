@@ -32,7 +32,7 @@ function Story() {
   };
 
   return (
-    <motion.div>
+    <motion.div id="story">
       <h1 className="head-text">My <span>Journey</span></h1>
 
     <motion.div
@@ -48,10 +48,10 @@ function Story() {
         animate="visible"
         >
         <p className="story__description">
-        I began my journey as a graphic designer during college, creating logos using Adobe Photoshop and Illustrator. This experience honed my design skills, connected me with global clients, and provided insights into diverse business needs.
+        I began my tech journey during college, creating logos using Adobe Photoshop and Illustrator. This experience honed my design skills, connected me with global clients, and provided insights into diverse business needs.
           <br/>
          
-          During my college years, I successfully completed three internships as a web developer, each offering valuable and unique learning opportunities. After graduation, I transitioned to a full-time role as a web developer at a startup in Chandigarh. There, I contributed to multiple impactful projects and conducted industrial training sessions in various colleges, sharing my knowledge and expertise with aspiring developers.
+          After that I aquired the knowledge of web development and during my college years, I successfully completed three internships as a web developer, each offering valuable and unique learning opportunities. After graduation, I transitioned to a full-time role as a web developer at a startup in Chandigarh. There, I contributed to multiple impactful projects and conducted industrial training sessions in various colleges, sharing my knowledge and expertise with aspiring developers.
           
           <br/>
           
