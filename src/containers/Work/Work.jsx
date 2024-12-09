@@ -101,8 +101,8 @@ const Work = () => {
         id: 9,
         imgUrl: './assets/websites/isdg.png',
         name: 'isdg',
-        projectLink: 'https://isdg.in/index.php/',
-        codeLink:  'https://isdg.in/index.php/',
+        projectLink: 'https://isdg.in/',
+        codeLink:  'https://isdg.in/',
         title: 'ISDG',
         tags: ['Set A', 'isdg'],
         description: 'This is the official website of Institute for Sustainable Development and Governance which is a is a research and advocacy organisation .'
@@ -189,16 +189,16 @@ const Work = () => {
         tags: ['Set A', 'skyrisechutes'],
         description: 'Skyrise Chutes is a Austin based company which provide the solution for building’s chute system.',
       },
-      {
-        id: 18,
-        imgUrl: './assets/websites/nardagency.png',
-        name: 'nardagency',
-        projectLink: 'https://nardagency.com/',
-        codeLink: 'https://github.com/example/project-ten',
-        title: 'Nard Agency',
-        tags: ['Set A', 'nardagency'],
-        description: 'NARD stands as a proficient web development and design company, delivering creative and innovative design services',
-      },
+      // {
+      //   id: 18,
+      //   imgUrl: './assets/websites/nardagency.png',
+      //   name: 'nardagency',
+      //   projectLink: 'https://nardagency.com/',
+      //   codeLink: 'https://github.com/example/project-ten',
+      //   title: 'Nard Agency',
+      //   tags: ['Set A', 'nardagency'],
+      //   description: 'NARD stands as a proficient web development and design company, delivering creative and innovative design services',
+      // },
       {
         id: 19,
         imgUrl: './assets/websites/inaraglobal.png',
@@ -219,16 +219,16 @@ const Work = () => {
         tags: ['Set B', 'exsure'],
         description: `ExSURE are developing India's first of its kind innovation involving exosome-based anti-cancer drug delivery platform targeting relapse-causing cancer stem cells.'`,
       },
-      // {
-        //   id: 21,
-        //   imgUrl: '../../../public/assets/websites/bestwebteam.png',
-        //   name: 'bestwebteam',
-        //   projectLink: 'https://bestwebteam.com/',
-        //   codeLink: 'https://bestwebteam.com/',
-        //   title: 'Best Web Team',
-        //   tags: ['Set A', 'bestwebteam'],
-        //   description: 'This is a description for project ten.',
-        // },
+      {
+          id: 21,
+          imgUrl: '../../../public/assets/websites/bestwebteam.png',
+          name: 'bestwebteam',
+          projectLink: 'https://bestwebteam.com/',
+          codeLink: 'https://bestwebteam.com/',
+          title: 'Best Web Team',
+          tags: ['Set A', 'bestwebteam'],
+          description: 'This is a description for project ten.',
+        },
         
         // shopify
         {
@@ -241,16 +241,16 @@ const Work = () => {
           tags: ['Set B', 'jaanlondon'],
           description: 'Jaan London is an e-commerce store based on United Kingdom, which sells ready-made cloths pecialises in eastern fashion with a touch of the west!.',
         },
-        // {
-        //   id: 23,
-        //   imgUrl: './assets/websites/fankarihouse.png',
-        //   name: 'bestwebteam',
-        //   projectLink: 'https://fankarihouse.com/',
-        //   codeLink: 'https://fankarihouse.com/',
-        //   title: 'Best Web Team',
-        //   tags: ['Set B', 'bestwebteam'],
-        //   description: 'This is a description for project ten.',
-        // },
+        { 
+          id: 23,
+          imgUrl: './assets/websites/fankarihouse.png',
+          name: 'Fankari House',
+          projectLink: 'https://fankarihouse.com/',
+          codeLink: 'https://fankarihouse.com/',
+          title: 'Fankari House',
+          tags: ['Set B', 'fankarihouse'],
+          description: 'Fankari House offers unique design wall posters, suitable for walls of all types.',
+        },
         {
           id: 24,
           imgUrl: './assets/websites/thehomeplunge.png',
@@ -277,7 +277,7 @@ const Work = () => {
           name: 'hikian',
           projectLink: 'https://hikian.com/',
           codeLink: 'https://hikian.com//',
-          title: 'Best Transplanter',
+          title: 'Hikian ',
           tags: ['Set A', 'hikian'],
           description: 'Hiken is a Finland based company which sells natural organic product. ',
         },
@@ -285,32 +285,32 @@ const Work = () => {
         // react
       {
         id: 28,
-        imgUrl: './assets/websites/tomato.png',
-        name: 'tomato',
+        imgUrl: './assets/websites/foodiesFusion.png',
+        name: 'foodiesFusion',
         projectLink: 'https://food-ordering-five-murex.vercel.app/',
         codeLink: 'https://github.com/iamsonukr/Food_Ordering_Website_Frontend_Raw',
-        title: 'Tomato - Order Your food Online',
-        tags: ['Set C', 'tomato'],
-        description: 'This website is build on react and allow users to order food online and pay online.',
+        title: 'FoodiesFusion',
+        tags: ['Set C','★', 'MERN','NodeJs','ReactJs','Payment-Integration','Admin Panel'],
+        description: `This website website is build on react and allow users to order food online and pay online.`,
       },
       {
         id: 29,
-        imgUrl: './assets/websites/redstore.png',
-        name: 'redstore',
+        imgUrl: './assets/websites/cartWagonPng.png',
+        name: 'Cart Wagon',
         projectLink: 'https://red-store-web-ruddy.vercel.app/',
         codeLink: 'https://github.com/iamsonukr/redStoreWeb',
-        title: 'Red Store',
-        tags: ['Set C', 'redstore'],
+        title: 'Cart Wagon',
+        tags: ['Set C', 'Frontend','Landing Pages'],
         description: 'This is an e-commerce store with unique interface and layout.',
       },
       {
         id: 30,
-        imgUrl: './assets/websites/mybooksummary.png',
+        imgUrl: './assets/websites/myBookSummary.png',
         name: 'mybooksummary',
         projectLink: 'https://my-book-summary.vercel.app/',
         codeLink: 'https://github.com/iamsonukr/myBookSummary',
         title: 'My Book Summary',
-        tags: ['Set C', 'mybooksummary'],
+        tags: ['Set C', 'Frontend','Landing Pages','Responsive Design'],
         description: 'This is a website for posting and reading famous books summary.',
       },
       {
@@ -320,31 +320,50 @@ const Work = () => {
         projectLink: 'https://space-portfolio-pink.vercel.app/',
         codeLink: 'https://github.com/iamsonukr/Space-Portfolio-React-Raw',
         title: 'Portfolio using Framer-Motion',
-        tags: ['Set C', 'spaceportfolio'],
+        tags: ['Set C' , 'MERN', 'NodeJs', 'Framer Motion','EmailJs'],
         description: 'This is a portfolio website which is build on react and used framer-motion for animation.',
       },
-      // {
-      //   id: 32,
-      //   imgUrl: './assets/websites/tomato.png',
-      //   name: 'lovelybands',
-      //   projectLink: 'https://red-store-web-ruddy.vercel.app/',
-      //   codeLink: 'https://github.com/iamsonukr/redStoreWeb',
-      //   title: 'Tomato - Order Your food Online',
-      //   tags: ['Set C', 'tomato'],
-      //   description: 'This is a description for project ten.',
-      // },
+      {
+        id: 32,
+        imgUrl: './assets/websites/narratoZone.png',
+        name: 'Narratozone',
+        projectLink: 'https://narratozone.vercel.app/',
+        codeLink: 'https://github.com/iamsonukr/NarratoZone',
+        title: 'Narratozone ',
+        tags: ['Set C','★','MERN','Nodemailer','OTP-Verification'],
+        description: 'This is a description for project ten.',
+      },
 
-      // {
-      //   id: 33,
-      //   imgUrl: './assets/websites/tomato.png',
-      //   name: 'wisper',
-      //   // projectLink: 'https://red-store-web-ruddy.vercel.app/',
-      //   projectLink: 'https://github.com/iamsonukr/redStoreWeb',
-      //   codeLink: 'https://github.com/iamsonukr/redStoreWeb',
-      //   title: 'Tomato - Order Your food Online',
-      //   tags: ['Set C', 'tomato'],
-      //   description: 'This is a description for project ten.',
-      // },
+      {
+        id: 33,
+        imgUrl: './assets/websites/pixelMoments.png',
+        name: 'wisper',
+        projectLink: 'https://pixelmoments.vercel.app/',
+        codeLink: 'https://github.com/iamsonukr/PixelMomentFullstack',
+        title: 'Pixel Moment',
+        tags: ['Set C','★', 'Photography', 'MERN','EmailJs','Razorpay'],
+        description: 'This is a description for project ten.',
+      },
+      {
+        id: 34,
+        imgUrl: './assets/websites/greenGrosser.png',
+        name: 'GreenGrosser',
+        projectLink: 'https://pixelmoments.vercel.app/',
+        codeLink: 'https://github.com/iamsonukr/PixelMomentFullstack',
+        title: 'GreenGrosser',
+        tags: ['Set C',  'Frontend','Landing Pages','Responsive Design'],
+        description: 'This is a description for project ten.',
+      },
+      {
+        id: 34,
+        imgUrl: './assets/websites/lovelyBands.png',
+        name: 'GreenGrosser',
+        projectLink: 'https://lovelybandsfeat.vercel.app/',
+        codeLink: 'https://github.com/iamsonukr/lovelybandsAdv',
+        title: 'SportFlex',
+        tags: ['Set C','★', 'SportFlex', 'MERN','Under Construction'],
+        description: 'This is a description for project ten.',
+      },
 
     ];
     setWorks(sampleData);
@@ -439,13 +458,16 @@ const Work = () => {
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>  
+              {work.tags[0]=='Set C'?
 
-              {/* <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
-              </div> */}
+                <div className="app__work-tag app__flex">
+                <p className="p-text-tag p-text">{work.tags.slice(1).map(item=><span className='tag'>{item+" "}</span>)}</p>
+              </div>
+              :""
+              }
             </div>
           </div>
-        ))}
+        ))} 
       </motion.div>
     </>
   );

@@ -131,6 +131,7 @@
       color: var(--white-color);
     }
   }
+ 
 }
 
 .app__work-content {
@@ -149,10 +150,32 @@
   }
 
   .app__work-tag {
-    position: absolute;
+    // position: absolute;
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    background-color: #fff;
+  
     top: -25px;
+    p{
+      color: white;
+    }
+  }
+}
+
+.p-text-tag{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  // align-items: start;
+  // justify-content: start;
+  // // gap: 110px;
+  // flex-direction: column;
+  .tag{
+    // margin: 5px ;
+    background-color: #898989;
+    padding: 5px 8px;
+    margin: 4px;
+    border-radius: 5px;
+
+
   }
 }
