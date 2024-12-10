@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 // import PortfolioSlider from './components/Slider/PortfolioSlider.jsx'
 import Story from './containers/Story/Story.jsx';
 import SliderStory from './SliderStory/SliderStory.jsx';
+import ThemeToggle from './ThemeToggle/ThemeToggle.jsx';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <>
     <Navbar/>
     <Home/>
+    {/* <ThemeToggle/> */}
  
     <About/>
     <Work/>

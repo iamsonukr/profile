@@ -194,10 +194,11 @@
   transition: opacity 0.3s ease-in-out;
 
   background: conic-gradient(from var(--angle),
-  #4776E6 25%,
-  #8E54E9 50%,
-  #FF54B0 25%,
-  #4776E6
+  #00D2FF 0%, 
+  #3A7BD5 25%, 
+  #00D2FF 50%,
+  #3A7BD5 75%, 
+  #00D2FF 100%
 );
 }
 

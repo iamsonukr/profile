@@ -56,6 +56,7 @@
                 @media (max-width:728px) {
                     // flex-direction: column;
                     font-size: 43px;
+                   
                 }
             }
             
@@ -100,10 +101,14 @@
     line-height: 1;
     margin-bottom: 20px;
     display: block;
+
+    @media (max-width:700px) {
+        height: 130px;
+    }
 }
 
 .banner p {
-    color: #0c0c0c;
+    color: var(--black-color);
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -155,16 +160,13 @@
 
 //-------------------------------------- TESTING ZONE -------------------------------------
 
-.profile-image:hover{
-    
+.profile-image:hover {
     box-shadow: 
-    20px 20px 20px rgba(29, 3, 135, 0.15),  // Shadow from bottom-right (light black)
-    -20px -20px 20px rgba(29, 3, 135, 0.15), // Shadow from top-left (light black)
-    20px -20px 20px rgba(29, 3, 135, 0.15),  // Shadow from bottom-left (slightly darker)
-    -20px 20px 20px rgba(29, 3, 135, 0.15);  // Shadow from top-right (slightly darker)
-    // box-shadow: 30px 30px 60px #f7959575, -30px -30px 60px #a876ff83;
+        10px 10px 20px rgba(29, 3, 135, 0.15),   /* Shadow from bottom-right (light black) */
+        -10px -10px 20px rgba(29, 3, 135, 0.15), /* Shadow from top-left (light black) */
+        10px -10px 20px rgba(29, 3, 135, 0.15),  /* Shadow from bottom-left (slightly darker) */
+        -10px 10px 20px rgba(29, 3, 135, 0.15);  /* Shadow from top-right (slightly darker) */
 }
-
 
 // ANimation
 

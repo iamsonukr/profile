@@ -1,5 +1,5 @@
 // Color Variables
-$primary-color: #3498db;
+$primary-color: #313bac;
 $secondary-color: #2c3e50;
 $accent-color: #34495e;
 $text-color: #333;
@@ -102,7 +102,7 @@ $light-background: #f4f6f7;
     // Hover animations
     &:hover {
       .icon-wrapper {
-        transform: rotate(15deg);
+        // transform: scale(1.2);
 
         .stat-icon {
           transform: scale(1.1);
@@ -168,3 +168,370 @@ $light-background: #f4f6f7;
   //     --angle: 360deg;
   //   }
   // }
+
+
+  // @property --angle {
+  //   syntax: '<angle>';
+  //   initial-value: 0deg;
+  //   inherits: false;
+  // }
+  
+  // .stat-item {
+  //   position: relative;
+  //   padding: 1.5rem;
+  //   background: white;
+  //   border-radius: 12px;
+  //   cursor: pointer;
+  //   isolation: isolate;
+    
+  //   // Inner content styling
+  //   .icon-wrapper {
+  //     margin-bottom: 0.5rem;
+      
+  //     .stat-icon {
+  //       width: 24px;
+  //       height: 24px;
+  //     }
+  //   }
+    
+  //   .counter {
+  //     font-size: 1.5rem;
+  //     font-weight: bold;
+      
+  //     span {
+  //       margin-left: 2px;
+  //     }
+  //   }
+    
+  //   p {
+  //     margin-top: 0.5rem;
+  //     font-size: 0.875rem;
+  //     color: #666;
+  //   }
+    
+  //   // Gradient border effect
+  //   &::before,
+  //   &::after {
+  //     content: '';
+  //     position: absolute;
+  //     inset: -2px; // Border thickness
+  //     border-radius: inherit;
+  //     padding: 2px;
+  //     background: conic-gradient(
+  //       from var(--angle),
+  //       #00D2FF 0%, 
+  //       #3A7BD5 25%, 
+  //       #00D2FF 50%,
+  //       #3A7BD5 75%, 
+  //       #00D2FF 100%
+  //     );
+  //     -webkit-mask: 
+  //       linear-gradient(#fff 0 0) content-box,
+  //       linear-gradient(#fff 0 0);
+  //     mask:
+  //       linear-gradient(#fff 0 0) content-box,
+  //       linear-gradient(#fff 0 0);
+  //     -webkit-mask-composite: xor;
+  //     mask-composite: exclude;
+  //     opacity: 0;
+  //     transition: opacity 0.3s ease;
+  //   }
+    
+  //   &::before {
+  //     filter: blur(7px);
+  //   }
+    
+  //   // Hover effects
+  //   &:hover {
+  //     &::before,
+  //     &::after {
+  //       opacity: 1;
+  //       animation: rotate 3s linear infinite;
+  //     }
+      
+  //     &::before {
+  //       opacity: 0.5;
+  //     }
+  //   }
+  // }
+  
+  // @keyframes rotate {
+  //   from {
+  //     --angle: 0deg;
+  //   }
+  //   to {
+  //     --angle: 360deg;
+  //   }
+  // }
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  @property --shadow-color {
+    syntax: '<color>';
+    initial-value: transparent;
+    inherits: false;
+  }
+  
+  .stat-item {
+    position: relative;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    cursor: pointer;
+    isolation: isolate;
+    transition: transform 0.3s ease;
+    
+    // Inner content styling
+    .icon-wrapper {
+      margin-bottom: 0.5rem;
+      
+      .stat-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    
+    .counter {
+      font-size: 1.5rem;
+      font-weight: bold;
+      
+      span {
+        margin-left: 2px;
+      }
+    }
+    
+    p {
+      margin-top: 0.5rem;
+      font-size: 0.875rem;
+      color: #666;
+    }
+    
+    // Gradient border effect
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: inherit;
+      padding: 2px;
+      background: conic-gradient(
+        from var(--angle),
+        #00D2FF 0%, 
+        #3A7BD5 25%, 
+        #00D2FF 50%,
+        #3A7BD5 75%, 
+        #00D2FF 100%
+      );
+      -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    &::before {
+      filter: blur(7px);
+    }
+    
+    // Synchronized box shadow animation
+    box-shadow: 0 0 15px var(--shadow-color);
+    --shadow-color: transparent;
+    
+    // Hover effects
+    &:hover {
+      transform: translateY(-2px);
+      
+      --shadow-color: rgba(0, 210, 255, 0.3);
+      
+      &::before,
+      &::after {
+        opacity: 1;
+        animation: rotate 3s linear infinite;
+      }
+      
+      &::before {
+        opacity: 0.5;
+      }
+      
+      animation: rotate-shadow 3s linear infinite;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      --angle: 0deg;
+    }
+    to {
+      --angle: 360deg;
+    }
+  }
+  
+  @keyframes rotate-shadow {
+    0% {
+      --shadow-color: rgba(0, 210, 255, 0.3);
+    }
+    25% {
+      --shadow-color: rgba(58, 123, 213, 0.3);
+    }
+    50% {
+      --shadow-color: rgba(0, 210, 255, 0.3);
+    }
+    75% {
+      --shadow-color: rgba(58, 123, 213, 0.3);
+    }
+    100% {
+      --shadow-color: rgba(0, 210, 255, 0.3);
+    }
+  }
+
+  @property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
+  @property --shadow-color1 {
+    syntax: '<color>';
+    initial-value: transparent;
+    inherits: false;
+  }
+  
+  @property --shadow-color2 {
+    syntax: '<color>';
+    initial-value: transparent;
+    inherits: false;
+  }
+  
+  .stat-item {
+    position: relative;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    cursor: pointer;
+    isolation: isolate;
+    transition: all 0.3s ease;
+    
+    // Inner content styling
+    .icon-wrapper {
+      margin-bottom: 0.5rem;
+      
+      .stat-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    
+    .counter {
+      font-size: 1.5rem;
+      font-weight: bold;
+      
+      span {
+        margin-left: 2px;
+      }
+    }
+    
+    p {
+      margin-top: 0.5rem;
+      font-size: 0.875rem;
+      color: #666;
+    }
+    
+    // Gradient border effect
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      inset: -2px;
+      border-radius: inherit;
+      padding: 2px;
+      background: conic-gradient(
+        from var(--angle),
+        #00D2FF 0%, 
+        #3A7BD5 25%, 
+        #00D2FF 50%,
+        #3A7BD5 75%, 
+        #00D2FF 100%
+      );
+      -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    &::before {
+      filter: blur(7px);
+    }
+    
+    // Enhanced shadow effect
+    box-shadow: 
+      0 5px 15px var(--shadow-color1),
+      0 10px 30px var(--shadow-color2);
+    --shadow-color1: transparent;
+    --shadow-color2: transparent;
+    
+    // Hover effects
+    &:hover {
+      transform: translateY(-3px);
+      
+      --shadow-color1: rgba(0, 210, 255, 0.4);
+      --shadow-color2: rgba(58, 123, 213, 0.3);
+      
+      &::before,
+      &::after {
+        opacity: 1;
+        animation: rotate 3s linear infinite;
+      }
+      
+      &::before {
+        opacity: 0.5;
+      }
+      
+      animation: rotate-shadow 3s linear infinite;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      --angle: 0deg;
+    }
+    to {
+      --angle: 360deg;
+    }
+  }
+  
+  @keyframes rotate-shadow {
+    0% {
+      --shadow-color1: rgba(0, 210, 255, 0.6);
+      --shadow-color2: rgba(58, 123, 213, 0.5);
+    }
+    25% {
+      --shadow-color1: rgba(58, 123, 213, 0.6);
+      --shadow-color2: rgba(0, 210, 255, 0.5);
+    }
+    50% {
+      --shadow-color1: rgba(0, 210, 255, 0.6);
+      --shadow-color2: rgba(58, 123, 213, 0.5);
+    }
+    75% {
+      --shadow-color1: rgba(58, 123, 213, 0.6);
+      --shadow-color2: rgba(0, 210, 255, 0.5);
+    }
+    100% {
+      --shadow-color1: rgba(0, 210, 255, 0.6);
+      --shadow-color2: rgba(58, 123, 213, 0.5);
+    }
+  } 

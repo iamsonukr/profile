@@ -14,7 +14,7 @@ import { Tooltip } from 'react-tooltip';
 const Skills = () => {
   const [experiences, setExperiences] = useState([
     {
-      year: "JAN-2024 - PRESENT",
+      year: "MAR 2024 - PRESENT",
       works: [
         {
           name: "MERN Stack Developer",
@@ -24,7 +24,7 @@ const Skills = () => {
       ]
     },
     {
-      year: "NOV-2023 - JAN-2024",
+      year: "NOV 2023 - JAN 2024",
       works: [
         {
           name: "Web Developer ( Internship )",
@@ -34,7 +34,7 @@ const Skills = () => {
       ]
     },
     {
-      year: "AUG-2022 - OCT-2022",
+      year: "SEP 2022 - NOV 2022",
       works: [
         {
           name: "Full Stack Developer Intern ",
@@ -44,7 +44,7 @@ const Skills = () => {
       ]
     },
     {
-      year: "JUN-2022 - JUL-2022",
+      year: "AUG 2022 - SEP 2022",
       works: [
         {
           name: "Web Developer Intern",

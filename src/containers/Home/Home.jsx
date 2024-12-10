@@ -15,7 +15,7 @@ const Home = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(100 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Full Stack Developer","MERN Stack Developer", ];
+  const toRotate = ["Web Developer", "Full Stack Developer","MERN Stack Developer","Software Developer" ];
   const period = 900;
 
   useEffect(() => {
@@ -68,7 +68,7 @@ const Home = () => {
             {({ isVisible }) =>
               <div>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>Hi! I'm <span className="myName">Sonu</span><br/> <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Full Stack Developer", "Front-end Developer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>Hi! I'm <span className="myName">Sonu</span><br/> <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Full Stack Developer", "Front-end Developer"]'><span className="wrap">{text}</span></span></h1>
                 <p>Hello, I am Sonu, a seasoned MERN stack developer with over three years of freelancing experience. I excel in crafting responsive and dynamic websites, ensuring seamless user experiences with efficient and scalable back-end solutions.</p>
                 <StatsSection/>
                 <a href="#contact">
