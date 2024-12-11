@@ -31,14 +31,14 @@
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
   --brown-color: #46364a;
-  --white-color: #ffffff;
+  --white-color: #e5e5e5;
 }
 
 [data-theme="dark"] {
   /* Dark theme variables */
   --primary-color: #1a1a1a;
   --secondary-color: #4e57d4;
-  --black-color: #ffffff;
+  --black-color: #e5e5e5;
   --lightGray-color: #333333;
   --gray-color: #b4b4b4;
   --brown-color: #6b5470;
