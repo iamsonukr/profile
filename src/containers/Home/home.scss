@@ -23,10 +23,12 @@
 
         .home-text {
             flex: 1;
+            margin-top: 10px;
 
             @media (max-width:728px) {
                 order: 1333;
                 padding: 100px 10px 0px 10px;
+              
             }
 
             h1{

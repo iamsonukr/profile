@@ -1,54 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0');
 
+// Keyframes
 @keyframes starTwinkle {
-  0%, 100% { opacity: 0.7; transform: scale(1); }
-  50% { opacity: 0.3; transform: scale(0.8); }
+
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
 }
 
 @keyframes cloudMove {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(100vw); }
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100vw);
+  }
 }
 
+// Theme toggle styles
 .theme-toggle {
   position: relative;
-  width: 60px;
-  height: 30px;
-  border-radius: 15px;
+  width: 50px;
+  height: 25px;
+  border-radius: 12.5px;
   border: none;
   cursor: pointer;
+  background: linear-gradient(135deg, #A6E3E9 0%, #71C9CE 100%);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  background: linear-gradient(135deg, #87CEEB 0%, #1E90FF 100%);
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 
-  // Sun element - main circle
   &::before {
     content: '';
     position: absolute;
-    top: 4px;
-    left: 4px;
-    width: 22px;
-    height: 22px;
+    top: 3px;
+    left: 3px;
+    width: 19px;
+    height: 19px;
     border-radius: 50%;
-    background: radial-gradient(circle at center,
-      #FFF176 0%,
-      #FFD700 50%,
-      #FFA000 100%
-    );
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateX(0);
+    background: radial-gradient(circle, #FFF9C4 0%, #FFC107 70%, #FF9800 100%);
+    transition: all 0.4s ease;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
     z-index: 2;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0.3px;
+    left: -2px;
+    width: 19px;
+    height: 19px;
+    // border-radius: 50% 50% 50% 50%;
+    border-radius: 90%;
+    // background: #1B1C30;
+    transform: translate(30px, 0);
+    opacity: 0;
+    transition: transform 0.1s ease, opacity 0.4s ease;
+    z-index: 3;
   }
 
   // Clouds
   .cloud {
     position: absolute;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    transition: all 0.5s ease;
-    z-index: 3;
+    z-index: 1;
 
     &::before,
     &::after {
@@ -60,52 +85,50 @@
   }
 
   .cloud-1 {
-    width: 35px;
-    height: 12px;
-    bottom: 8px;
-    left: -35px;
-    animation: cloudMove 15s linear infinite;
-    animation-delay: -5s;
-
-    &::before {
-      width: 16px;
-      height: 16px;
-      top: -8px;
-      left: 8px;
-    }
-
-    &::after {
-      width: 12px;
-      height: 12px;
-      top: -6px;
-      left: 18px;
-    }
-  }
-
-  .cloud-2 {
-    width: 28px;
+    width: 30px;
     height: 10px;
-    bottom: 6px;
-    right: -28px;
-    animation: cloudMove 12s linear infinite;
-    animation-delay: -3s;
+    bottom: 4px;
+    left: -30px;
+    animation: cloudMove 10s linear infinite;
 
     &::before {
-      width: 12px;
-      height: 12px;
+      width: 14px;
+      height: 14px;
       top: -6px;
-      left: 6px;
+      left: 8px;
     }
 
     &::after {
       width: 10px;
       height: 10px;
       top: -5px;
+      left: 18px;
+    }
+  }
+
+  .cloud-2 {
+    width: 25px;
+    height: 8px;
+    bottom: 3px;
+    right: -25px;
+    animation: cloudMove 12s linear infinite;
+
+    &::before {
+      width: 10px;
+      height: 10px;
+      top: -4px;
+      left: 6px;
+    }
+
+    &::after {
+      width: 8px;
+      height: 8px;
+      top: -3px;
       left: 14px;
     }
   }
 
-  // Stars container
+  // Stars
   .stars {
     position: absolute;
     top: 0;
@@ -113,86 +136,89 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: opacity 0.5s ease;
-    z-index: 1;
+    transition: opacity 0.4s ease;
+    z-index: 0;
   }
 
   .star {
     position: absolute;
     background: white;
     border-radius: 50%;
-    opacity: 0;
-    animation: starTwinkle 2s infinite;
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+    animation: starTwinkle 1.8s infinite;
   }
 }
 
-// Dark theme styles
+// Dark theme adjustments
 html[data-theme='dark'] {
   .theme-toggle {
-    background: linear-gradient(135deg, #0C1445 0%, #1A2980 100%);
+    background: linear-gradient(135deg, #0F1016 0%, #1B1C30 100%),
+      radial-gradient(circle at 20% 30%, rgba(50, 50, 100, 0.15) 0%, transparent 40%),
+      radial-gradient(1px 1px,
+        rgba(255, 255, 255, 0.7) 2px,
+        transparent 0) 0 0 / 100px 100px,
+      radial-gradient(1px 1px,
+        rgba(255, 255, 255, 0.5) 1px,
+        transparent 0) 50px 50px / 120px 120px;
 
-    // Crescent moon
+    // background: linear-gradient(135deg, #0C1445 0%, #1A2980 100%);
+    background-blend-mode: overlay, soft-light, normal, normal;
+
     &::before {
-      transform: translateX(30px);
-      background: linear-gradient(40deg, #FFFFFF 0%, #E6E6FA 100%);
-      box-shadow: 
-        4px -2px 0 0 #0C1445,  // Creates crescent shape
-        0 0 10px rgba(255, 255, 255, 0.5);
+      transform: translateX(25px);
+      background: radial-gradient(circle, #EDEDED 0%, #CCCCCC 70%),
+        // Large craters
+        radial-gradient(circle at 30% 35%, rgba(3, 3, 3, 0.4) 0%, transparent 20%),
+        radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.4) 0%, transparent 15%),
+        // Smaller craters
+        radial-gradient(circle at 40% 50%, rgba(105, 105, 105, 0.3) 0%, transparent 8%),
+        radial-gradient(circle at 60% 30%, rgba(0, 0, 0, 0.3) 0%, transparent 10%),
+        radial-gradient(circle at 50% 70%, rgba(105, 105, 105, 0.3) 0%, transparent 6%);
+      background-blend-mode: soft-light;
+      box-shadow: -2px 2px 0 0 #1B1C30,
+        inset -8px -8px 15px rgba(0, 0, 0, 0.2);
     }
 
-    .cloud-1, 
-    .cloud-2 {
-      opacity: 0.3;
-      background: rgba(200, 200, 200, 0.3);
+    &::after {
+      transform: translateX(25px);
+      opacity: 0.9;
+      filter: blur(1px);
+      background: radial-gradient(circle at 45% 45%, rgba(0, 0, 0, 0.2) 0%, transparent 25%);
     }
 
     .stars {
       opacity: 1;
     }
 
-    .cloud-1 {
-      animation: cloudMove 20s linear infinite;
-      animation-delay: -7s;
-    }
-
-    .cloud-2 {
-      animation: cloudMove 15s linear infinite;
-      animation-delay: -4s;
+    .cloud {
+      background: rgba(180, 180, 180, 0.3);
     }
   }
 }
 
-// Generate random star positions and sizes
-@for $i from 1 through 20 {
+// Star styles
+@for $i from 1 through 15 {
   .theme-toggle .star:nth-child(#{$i}) {
-    $size: random(3) + 1px;
-    $top: random(100) + 0%;
-    $left: random(100) + 0%;
-    $delay: random(20) + 0s;
-
-    width: $size;
-    height: $size;
-    top: $top;
-    left: $left;
-    animation-delay: -$delay;
+    width: random(3) + 1px;
+    height: random(3) + 1px;
+    top: random(100) + 0%;
+    left: random(100) + 0%;
+    animation-delay: -#{random(2)}s;
   }
 }
 
-// Hover and focus states
+// Hover effects
 .theme-toggle {
-  &:focus {
-    outline: 2px solid #4A90E2;
-    outline-offset: 2px;
-  }
-
   &:hover {
-    opacity: 0.95;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
   }
 
   &:active {
-    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  &:focus {
+    outline: 2px solid #71C9CE;
+    outline-offset: 2px;
   }
 }

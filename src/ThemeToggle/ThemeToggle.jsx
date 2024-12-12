@@ -14,6 +14,27 @@ const ThemeToggle = () => {
       />
     ));
     setStars(newStars);
+
+    // Detect system theme and apply it
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    const applySystemTheme = (e) => {
+      const html = document.documentElement;
+      if (e.matches) {
+        html.setAttribute('data-theme', 'dark');
+      } else {
+        html.removeAttribute('data-theme');
+      }
+    };
+
+    // Initial theme setting based on system preference
+    applySystemTheme(mediaQuery);
+
+    // Listen for system theme changes
+    mediaQuery.addEventListener('change', applySystemTheme);
+
+    // Cleanup listener on component unmount
+    return () => mediaQuery.removeEventListener('change', applySystemTheme);
   }, []);
 
   const toggleTheme = () => {
