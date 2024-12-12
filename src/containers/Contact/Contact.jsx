@@ -9,10 +9,10 @@ const Contact = () => {
   const [formEmail,setFormEmail]=useState();
   const [formMessage,setFormMessage]=useState();
   const [sentMessage,setSentMessage]=useState("Write me a message !")
-  const formRef = useRef();
+  const formRef = useRef(); 
   const [error, setError] = useState(null);
   const [sent, setSent] = useState(false);
-  const [msgColor,setMsgColor]=useState('black')
+  const [msgColor,setMsgColor]=useState('gray')
 
 
   const sendEmail = (e) => {
@@ -56,7 +56,7 @@ const Contact = () => {
         <motion.div className="item">
           <h2>Mail</h2>
           <span>
-            <a href="mailto:thesonukumar357@gmail.com" style={{ color: 'black', textDecoration: 'none' }}>
+            <a href="mailto:thesonukumar357@gmail.com" style={{ textDecoration: 'none' }}>
               thesonukumar357@gmail.com
             </a>
           </span>
@@ -68,7 +68,7 @@ const Contact = () => {
         <motion.div className="item">
           <h2>Phone</h2>
           <span>
-            <a href="tel:+918210490833" style={{ color: 'black', textDecoration: 'none' }}>
+            <a href="tel:+918210490833" style={{  textDecoration: 'none' }}>
               +91 821 049 0833
             </a>
           </span>

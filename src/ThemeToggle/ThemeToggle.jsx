@@ -3,16 +3,24 @@ import './themeToggle.scss';
 
 const ThemeToggle = () => {
   const [stars, setStars] = useState([]);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    // Generate stars dynamically
+    // Generate stars dynamically with random positions
     const newStars = Array.from({ length: 20 }, (_, i) => (
-      <span key={`star-${i}`} className="star"></span>
+      <span 
+        key={`star-${i}`} 
+        className="star"
+      />
     ));
     setStars(newStars);
   }, []);
 
   const toggleTheme = () => {
+    // Prevent multiple rapid clicks during animation
+    if (isAnimating) return;
+
+    setIsAnimating(true);
     const html = document.documentElement;
     const currentTheme = html.getAttribute('data-theme');
     
@@ -21,12 +29,18 @@ const ThemeToggle = () => {
     } else {
       html.setAttribute('data-theme', 'dark');
     }
+
+    // Reset animation lock after transition completes
+    setTimeout(() => {
+      setIsAnimating(false);
+    }, 500); // Match this with the CSS transition duration
   };
 
   return (
     <button
       onClick={toggleTheme}
       className="theme-toggle"
+      aria-label="Toggle theme"
     >
       {/* Clouds */}
       <span className="cloud cloud-1"></span>

@@ -307,7 +307,8 @@ $light-background: #f4f6f7;
     p {
       margin-top: 0.5rem;
       font-size: 0.875rem;
-      color: #666;
+      color: var(--black-color) !important;
+      
     }
     
     // Gradient border effect
