@@ -8,6 +8,8 @@
     background: var(--white-color);
     ;
 
+    
+
   
     &__container {
       position: relative;
@@ -22,7 +24,11 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      
+      
     }
+
+   
   
     &__loading {
       position: absolute;
@@ -58,7 +64,7 @@
       width: 70%;
       text-align: center;
       color: white;
-      font-size: 1rem;
+      font-size: 0.8rem;
       padding: 1rem;
       margin: 0;
       background: rgba(0, 0, 0, 0.1);

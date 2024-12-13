@@ -67,7 +67,7 @@ const Home = () => {
           <TrackVisibility>
             {({ isVisible }) =>
               <div>
-                <span className="tagline">Welcome to my Portfolio</span>
+                <span className="tagline">Build Beyond Limits</span>
                 <h1>Hi! I'm <span className="myName">Sonu</span><br/> <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Full Stack Developer", "Front-end Developer"]'><span className="wrap">{text}</span></span></h1>
                 <p>Hello, I am Sonu, a seasoned MERN stack developer with over three years of freelancing experience. I excel in crafting responsive and dynamic websites, ensuring seamless user experiences with efficient and scalable back-end solutions.</p>
                 <StatsSection/>

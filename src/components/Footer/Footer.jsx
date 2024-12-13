@@ -10,14 +10,14 @@ const Footer = () => {
     { name: 'Work', href: '#work' },
     { name: 'Skills', href: '#skills' },
     { name: 'Contact', href: '#contact' },
-    { name: 'Graphic Design', href: 'https://drive.google.com/drive/folders/1pHjfh__ONSlFIUFGVX13im02p-7ANWEQ?usp=sharing' }
+    { name: 'Graphic', href: 'https://drive.google.com/drive/folders/1pHjfh__ONSlFIUFGVX13im02p-7ANWEQ?usp=sharing' }
   ];
 
   const socialLinks = [
-    { name: 'GitHub', href: 'https://github.com/yourusername', icon: <FaGithub /> },
-    { name: 'LinkedIn', href: 'https://linkedin.com/in/yourusername', icon: <FaLinkedin /> },
-    { name: 'Instagram', href: 'https://instagram.com/yourusername', icon: <FaInstagram /> },
-    { name: 'Twitter', href: 'https://twitter.com/yourusername', icon: <FaTwitter /> }
+    { name: 'GitHub', href: 'https://github.com/iamsonukr', icon: <FaGithub /> },
+    { name: 'LinkedIn', href: 'https://linkedin.com/in/thesonukr', icon: <FaLinkedin /> },
+    { name: 'Instagram', href: 'https://instagram.com/thesonukr', icon: <FaInstagram /> },
+    { name: 'Twitter', href: 'https://twitter.com/the_sonukr_', icon: <FaTwitter /> }
   ];
 
   const contactInfo = {
@@ -34,15 +34,16 @@ const Footer = () => {
         <div className="footer-navbar-logo">
           <h3>Sonu Kumar</h3>
           <p>
-            Available for freelancing
+            Available for Full-time & 
             <br />
-            opportunities
+            freelancing opportunities
           </p>
           <a 
             href="#contact"
             className="footer-button"
             role="button"
             aria-label="Connect with Sonu Kumar"
+
           >
             Let's Connect
           </a>
@@ -57,6 +58,7 @@ const Footer = () => {
                 <a 
                   href={href}
                   aria-label={`Go to ${name} section`}
+                  target={name === "Graphic" ? "_blank" : "_self  "}
                 >
                   {name}
                 </a>

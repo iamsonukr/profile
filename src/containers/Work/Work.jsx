@@ -12,11 +12,16 @@ const Work = () => {
   const [filterWork, setFilterWork] = useState([]);
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
+  const [deviceWidth,setDeviceWidth]=useState(window.innerWidth)
+
+  
 
 
   useEffect(() => {
     // firt -> Set , Second -> Tech Used , third-> Service offered, Fourth -> Country
     ;
+
+    console.log("The deviceWIdht is ",deviceWidth)
     console.log(myProjects)
     setWorks(myProjects);
     setFilterWork(myProjects); // Assuming initially, filterWork is the same as works
@@ -77,6 +82,7 @@ const Work = () => {
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
+                whileInView={deviceWidth<=728 && { opacity: [0, 1] } }
                 transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
                 className="app__work-hover app__flex"
               >
@@ -109,7 +115,9 @@ const Work = () => {
 
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p> 
+              <p className="p-text" style={{ marginTop: 10 }}>
+                {work.description}
+              </p> 
               {/* {
                 work.tags.includes('Set A')?`This website is under construction`:""
               }  */}

@@ -5,18 +5,28 @@ import "./SliderStory.scss";
 const portfolioItems = [
   {
     id: 1,
-    title: "Conducting Web Development Workshop",
+    title: "Web Development Training - St Andrews Delhi OCT 2024",
     image: "./assets/SAITM-B1.jpg"
   },
   {
     id: 2,
-    title: "Conducting Web Development Workshop",
+    title: "Web Development Training - St Andrews Delhi OCT 2024",
     image: "./assets/SAITM-B2.jpg"
   },
   {
     id: 3,
-    title: "Conducting Web Development Workshop",
+    title: "Web Development Training - St Andrews Delhi",
     image: "./assets/SonuTeaching.png"
+  },
+  {
+    id: 4,
+    title: "Web Development Training - St Andrews Gurugram Dec 2024",
+    image: "./assets/Gurugram3D.png"
+  },
+  {
+    id: 5,
+    title: "Web Development Training - St Andrews Gurugram Dec 2024",
+    image: "./assets/SonuGurugram3b.png"
   },
   // {
   //   id: 4,
@@ -24,7 +34,7 @@ const portfolioItems = [
   //   image: "./assets/sonuCollege.png"
   // },
   {
-    id: 5,
+    id: 101,
     title: "College NCC Camp C-Certificate",
     image: "./assets/sonuNCC.png"
   },
@@ -47,10 +57,10 @@ const SliderStory = () => {
     });
   }, []);
 
-  useEffect(() => {
-    const timer = setInterval(() => paginate(1), 60000);
-    return () => clearInterval(timer);
-  }, [paginate]);
+  // useEffect(() => {
+  //   const timer = setInterval(() => paginate(1), 60000);
+  //   return () => clearInterval(timer);
+  // }, [paginate]);
 
   const handleDragEnd = (e, { offset, velocity }) => {
     const swipe = swipePower(offset.x, velocity.x);

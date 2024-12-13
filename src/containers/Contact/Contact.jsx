@@ -3,6 +3,7 @@ import './contact.scss';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import { MotionWrap, AppWrap } from '../../wrapper';
+import { FaEnvelope, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
 const Contact = () => {
   const [formName,setFormName]=useState();
@@ -53,42 +54,55 @@ const Contact = () => {
         <h1 className="letsWork">
           Let's work <span>together</span>
         </h1>
-        <motion.div className="item">
-          <h2>Mail</h2>
-          <span>
-            <a href="mailto:thesonukumar357@gmail.com" style={{ textDecoration: 'none' }}>
-              thesonukumar357@gmail.com
-            </a>
-          </span>
-        </motion.div>
-        <motion.div className="item">
-          <h2>Address</h2>
-          <span> Manimajra, Chandigarh</span>
-        </motion.div>
-        <motion.div className="item">
-          <h2>Phone</h2>
-          <span>
-            <a href="tel:+918210490833" style={{  textDecoration: 'none' }}>
-              +91 821 049 0833
-            </a>
-          </span>
-        </motion.div>
-      </motion.div>
 
+
+        <motion.div className="item">
+  <h2>
+    <FaEnvelope />
+    Mail
+  </h2>
+  <span>
+    <a href="mailto:thesonukumar357@gmail.com" style={{ textDecoration: 'none' }}>
+      thesonukumar357@gmail.com
+    </a>
+  </span>
+</motion.div>
+<motion.div className="item">
+  <h2>
+    <FaMapMarkerAlt />
+    Address
+  </h2>
+  <span>Manimajra, Chandigarh</span>
+</motion.div>
+<motion.div className="item">
+  <h2>
+    <FaPhone />
+    Phone
+  </h2>
+  <span>
+    <a href="tel:+918210490833" style={{ textDecoration: 'none' }}>
+      +91 821 049 0833
+    </a>
+  </span>
+</motion.div>
+
+        
+      </motion.div>
+  
       {/* form starts here */}
       <div className="formContainer">
         <motion.form ref={formRef} onSubmit={sendEmail}>
           <input type="text" placeholder="Name" name="from_name" onChange={(e)=>setFormName(e.target.value)} value={formName} />
           <input type="email" required placeholder="Email" name="sender_email" onChange={(e)=>setFormEmail(e.target.value)} value={formEmail} />
           <textarea rows={8} placeholder="Message" name="message" onChange={(e)=>setFormMessage(e.target.value)} value={formMessage} />
-          <button type="submit" >Submit</button>
+          <button type="submit">Submit</button>
           {/* {sent ? (error ? "<h2>Message Failed</h2>" : "Message Sent Successfully") : " "} */}
           <h3 style={{color:msgColor}}>{sentMessage}</h3>
         </motion.form>
       </div>
     </motion.div>
   );
-};
+}
 
 export default AppWrap(
   MotionWrap(Contact, 'app__skills'),

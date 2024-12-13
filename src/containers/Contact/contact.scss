@@ -40,14 +40,14 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-
+        
       
         @include mobile{
             transform: none !important;   //changes
             opacity: 1 !important;  //changes
             gap: 20px;
-            text-align: center;
-            align-items: center;
+            // text-align: center;
+            // align-items: center;
             margin-top: 70px;
         }
         h1{
@@ -69,14 +69,21 @@
         span{
             font-weight: 300;
         }
+
+        // testing area
         
         .item{
             color: var(--black-color);
+            h2{
+                font-size: 1.3rem;
+                font-weight: 400;
+                padding: 5px 0px;
+            }
             span{
                 color: var(--black-color);
                 a{
                     color: var(--black-color);
-
+                
                 }
             }
 
@@ -86,6 +93,44 @@
                 
             } 
         }
+
+
+        // testing area
+
+        .item {
+            color: var(--black-color);
+            
+            h2 {
+                font-size: 1.3rem;
+                font-weight: 400;
+                // padding: 5px 0px;
+                display: flex;
+                align-items: center;
+                gap: 10px;  // Creates consistent spacing between icon and text
+                
+                svg {
+                    font-size: 1.2rem;  // Makes icon slightly smaller than text
+                    margin-top: 2px;    // Fine-tune vertical alignment
+                }
+            }
+            
+            span {
+                color: var(--black-color);
+                padding-left: 28px;    // Aligns with text after icon
+                display: block;        // Ensures consistent block layout
+                
+                a {
+                    color: var(--black-color);
+                    display: inline-block;
+                }
+            }
+            
+            @include mobile {
+                transform: none !important;   //changes
+                opacity: 1 !important;        //changes
+            }
+        }
+
     }
     .formContainer{
         flex: 1;
