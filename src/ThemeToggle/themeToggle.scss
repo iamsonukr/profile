@@ -152,16 +152,16 @@
 // Dark theme adjustments
 html[data-theme='dark'] {
   .theme-toggle {
-    background: linear-gradient(135deg, #0F1016 0%, #1B1C30 100%),
-      radial-gradient(circle at 20% 30%, rgba(50, 50, 100, 0.15) 0%, transparent 40%),
-      radial-gradient(1px 1px,
-        rgba(255, 255, 255, 0.7) 2px,
-        transparent 0) 0 0 / 100px 100px,
-      radial-gradient(1px 1px,
-        rgba(255, 255, 255, 0.5) 1px,
-        transparent 0) 50px 50px / 120px 120px;
+    // background: linear-gradient(135deg, #0F1016 0%, #1B1C30 100%),
+    //   radial-gradient(circle at 20% 30%, rgba(50, 50, 100, 0.15) 0%, transparent 40%),
+    //   radial-gradient(1px 1px,
+    //     rgba(255, 255, 255, 0.7) 2px,
+    //     transparent 0) 0 0 / 100px 100px,
+    //   radial-gradient(1px 1px,
+    //     rgba(255, 255, 255, 0.5) 1px,
+    //     transparent 0) 50px 50px / 120px 120px;
 
-    // background: linear-gradient(135deg, #0C1445 0%, #1A2980 100%);
+    background: linear-gradient(135deg, #0C1445 0%, #1A2980 100%);
     background-blend-mode: overlay, soft-light, normal, normal;
 
     &::before {

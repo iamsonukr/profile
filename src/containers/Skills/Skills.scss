@@ -108,6 +108,11 @@
   align-items: flex-start;
   margin: 1rem 0;
 
+  @media (max-width:728px) {
+    flex-direction:column;
+    
+  }
+
   @media (max-width) {
     
   }
@@ -123,6 +128,8 @@
     align-items: flex-start;
     margin-bottom: 1rem;
     cursor: pointer;
+    flex-wrap:wrap;
+    
 
     h4 {
       font-weight: 500;

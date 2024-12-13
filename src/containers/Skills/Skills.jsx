@@ -4,6 +4,7 @@ import 'react-tooltip/dist/react-tooltip.css'
 // import ReactTooltip from 'react-tooltip';
 // import { Tooltip } from 'react-tooltip'
 // import j from '../../assets/react.png'
+import TruncatedText from '../../components/TruncatedText/TruncatedText';
 
 
 import { AppWrap, MotionWrap } from '../../wrapper';
@@ -60,13 +61,13 @@ const Skills = () => {
       name: "HTML",
       bgColor: "#edf2f8",
       icon: "./assets/skills/html.png"
-   
+
     },
     {
       name: "CSS",
       bgColor: "#edf2f8",
       icon: "./assets/skills/css.png"
-   
+
     },
     {
       name: "JavaScript",
@@ -77,7 +78,7 @@ const Skills = () => {
       name: "React",
       bgColor: "#edf2f8",
       icon: "./assets/skills/react.png"
-   
+
     },
     {
       name: "NodeJS",
@@ -190,7 +191,7 @@ const Skills = () => {
                 className="app__flex testing-gray-parent"
                 style={{ backgroundColor: skill.bgColor }}
               >
-                <img className='testing-gray-child'  src={skill.icon} alt={skill.name} />
+                <img className='testing-gray-child' src={skill.icon} alt={skill.name} />
                 {/* <img src={skill.icon} alt={skill.name} /> */}
                 {/* <img alt={skill.name} /> */}
               </div>
@@ -204,16 +205,16 @@ const Skills = () => {
         {/* Experience  */}
 
         <div className="app__skills-exp">
-          {experiences.map((experience,index) => (
+          {experiences.map((experience, index) => (
             <motion.div className="app__skills-exp-item" key={experience.year} >
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.year}</p>
               </div>
               <motion.div className="app__skills-exp-works">
-                
-                {experience.works.map((work,workIndex) => (
+
+                {experience.works.map((work, workIndex) => (
                   <>
-                    <motion.div whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5 }} className="app__skills-exp-work" 
+                    <motion.div whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5 }} className="app__skills-exp-work"
                       data-tip
                       data-for={work.name}
                       key={work.name}
@@ -221,9 +222,14 @@ const Skills = () => {
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
-                    <div id={`work-${index}-${workIndex}`} className="skills-tooltip">
+                      {/* <div id={`work-${index}-${workIndex}`} className="skills-tooltip">
                       {work.desc}
-                    </div>
+                    </div> */}
+                      <TruncatedText
+                        text={work.desc}
+                        workIndex={workIndex}
+                        index={index}
+                      />
                     </motion.div>
 
 

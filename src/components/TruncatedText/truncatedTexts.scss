@@ -1,0 +1,109 @@
+.skills-tooltip {
+    position: relative;
+    width: 100%;
+    
+    &.truncated {
+      .tooltip-content {
+        height: 3rem; // Shows 2 lines of text (assuming 1.5 line height)
+        overflow: hidden;
+        position: relative;
+        
+        &::after {
+          content: '...';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 4rem;
+          height: 1.5rem;
+          background: linear-gradient(to left, 
+            rgba(92, 0, 197, 0.288) 0%,
+            
+            var(--black-color) 60%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding-right: 0.5rem;
+        }
+      }
+    }
+    
+    &.expanded {
+      .tooltip-content {
+        position: absolute;
+        height: auto;
+        background-color: var(--primary-color);
+        padding: 1rem;
+        border-radius: 0.375rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        z-index: 10;
+        width: 100%;
+        transition: all 0.3s ease;
+
+        // add border here
+        border: 2px solid #00D2FF;
+      
+
+        @media (max-width:728px) {
+          width: 90vw;          
+        }
+        
+        &::after {
+          display: none;    
+        }
+      }
+    }
+  
+    .tooltip-content {
+      line-height: 1.5;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .skills-tooltip {
+    position: relative;
+    width: 100%;
+    
+    &.truncated {
+      .tooltip-content {
+        height: 3rem;
+        overflow: hidden;
+        position: relative;
+        
+        &::after {
+          content: '...Read More';  // Changed from just '...'
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 6rem;  // Increased width to accommodate new text
+          height: 1.5rem;
+          background: linear-gradient(to left,
+            rgba(92, 0, 197, 0.2) 0%,    // Lighter purple for subtlety
+            rgba(92, 0, 197, 0.25) 20%,  // Gradual increase in opacity
+            rgba(255, 255, 255, 9) 70%,
+            rgba(255, 255, 255, 0.3) 100%
+          );
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          padding-right: 0.5rem;
+          color: rgb(92, 0, 197);  // Purple color for "Read More"
+          font-size: 0.85rem;
+          cursor: pointer;
+          
+          // Optional hover effect for the fade
+          &:hover {
+            background: linear-gradient(to left,
+              rgba(92, 0, 197, 0.2) 0%,
+              rgba(92, 0, 197, 0.25) 20%,
+              rgba(255, 255, 255, 0.9) 70%,
+              rgba(255, 255, 255, 0) 100%
+            );
+          }
+        }
+      }
+    }
+}
