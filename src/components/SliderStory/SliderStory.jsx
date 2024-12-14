@@ -6,38 +6,44 @@ const portfolioItems = [
   {
     id: 1,
     title: "Web Development Training - St Andrews Delhi OCT 2024",
-    image: "./assets/SAITM-B1.jpg"
+    image: "./assets/sliderImages/SAITM-B1-OCT.jpg"
   },
   {
     id: 2,
     title: "Web Development Training - St Andrews Delhi OCT 2024",
-    image: "./assets/SAITM-B2.jpg"
+    image: "./assets/sliderImages/SAITM-B2-OCT.jpg"
   },
   {
     id: 3,
     title: "Web Development Training - St Andrews Delhi",
-    image: "./assets/SonuTeaching.png"
+    image: "./assets/sliderImages/SAITM-B2-OCT-SonuTeaching.png"
   },
   {
     id: 4,
     title: "Web Development Training - St Andrews Gurugram Dec 2024",
-    image: "./assets/Gurugram3D.png"
+    image: "./assets/sliderImages/SAITM-GG-BTI-NOV.png"
   },
   {
     id: 5,
     title: "Web Development Training - St Andrews Gurugram Dec 2024",
-    image: "./assets/SonuGurugram3b.png"
+    image: "./assets/sliderImages/SAITM-GG-BTI-NOV2.png"
   },
-  // {
-  //   id: 4,
-  //   title: "Portfolio Website",
-  //   image: "./assets/sonuCollege.png"
-  // },
+  {
+    id: 100,
+    title: "",
+    image: "./assets/sliderImages/SchoolPicNotice.png"
+  },
   {
     id: 101,
-    title: "College NCC Camp C-Certificate",
-    image: "./assets/sonuNCC.png"
+    title: "Jharkhand Day Celebraion at Governor House - NOV 2023",
+    image: "./assets/sliderImages/GovernerHouse.jpeg"
   },
+  {
+    id: 102,
+    title: "NCC Camp C-Certificate - NOV 2022",
+    image: "./assets/sliderImages/SONU-COLLEGE-NCC.png"
+  },
+  
 ];
 
 const swipeConfidenceThreshold = 60000;
@@ -98,7 +104,7 @@ const SliderStory = () => {
   return (
     <div className="slider">
       <div className="slider__container">
-        <AnimatePresence initial={false} custom={direction} mode="wait">
+        <AnimatePresence initial={false} custom={direction} >
           <motion.div
             key={currentIndex}
             custom={direction}
@@ -107,7 +113,7 @@ const SliderStory = () => {
             animate="center"
             exit="exit"
             transition={{
-              x: { type: "spring", stiffness: 200, damping: 30 },
+              x: { type: "spring", stiffness: 400, damping: 100 },
               opacity: { duration: 0.2 }
             }}
             drag="x"

@@ -5,6 +5,7 @@ import { myProjects } from '../../../public/work/Work';
 import { AppWrap, MotionWrap } from '../../wrapper';
 // import { urlFor, client } from '../../client';
 import './Work.scss';
+import { useNavigate } from 'react-router-dom';
 // import ''
 
 const Work = () => {
@@ -13,6 +14,7 @@ const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [deviceWidth,setDeviceWidth]=useState(window.innerWidth)
+  const navigate=useNavigate()
 
   
 
@@ -27,17 +29,14 @@ const Work = () => {
     setFilterWork(myProjects); // Assuming initially, filterWork is the same as works
   }, []);
 
-  // useEffect(() => {
-  //   const query = '*[_type == "works"]';
-
-  //   client.fetch(query).then((data) => {
-  //     setWorks(data);
-  //     setFilterWork(data);
-  //   });
-  // }, []);
+  const scrollToWork = () => {
+    document.getElementById('work').scrollIntoView({ behavior: 'smooth' });
+  }
 
   const handleWorkFilter = (item) => {
+    
     setActiveFilter(item);
+    scrollToWork()
     setAnimateCard([{ y: 100, opacity: 0 }]);
 
     setTimeout(() => {

@@ -8,8 +8,8 @@ const ThemeToggle = () => {
   useEffect(() => {
     // Generate stars dynamically with random positions
     const newStars = Array.from({ length: 20 }, (_, i) => (
-      <span 
-        key={`star-${i}`} 
+      <span
+        key={`star-${i}`}
         className="star"
       />
     ));
@@ -17,7 +17,7 @@ const ThemeToggle = () => {
 
     // Detect system theme and apply it
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    
+
     const applySystemTheme = (e) => {
       const html = document.documentElement;
       if (e.matches) {
@@ -44,7 +44,7 @@ const ThemeToggle = () => {
     setIsAnimating(true);
     const html = document.documentElement;
     const currentTheme = html.getAttribute('data-theme');
-    
+
     if (currentTheme === 'dark') {
       html.removeAttribute('data-theme');
     } else {
@@ -64,13 +64,15 @@ const ThemeToggle = () => {
       aria-label="Toggle theme"
     >
       {/* Clouds */}
-      <span className="cloud cloud-1"></span>
+      {/* <span className="cloud cloud-1"></span> */}
       <span className="cloud cloud-2"></span>
-      
+
       {/* Stars container */}
       <div className="stars">
         {stars}
-      </div>
+        </div>
+      
+
     </button>
   );
 };

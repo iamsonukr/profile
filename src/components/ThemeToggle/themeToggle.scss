@@ -17,11 +17,11 @@
 
 @keyframes cloudMove {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-10vw);
   }
 
   100% {
-    transform: translateX(100vw);
+    transform: translateX(10vw);
   }
 }
 
@@ -49,24 +49,24 @@
     background: radial-gradient(circle, #FFF9C4 0%, #FFC107 70%, #FF9800 100%);
     transition: all 0.4s ease;
     box-shadow: 0 0 10px rgba(255, 152, 0, 0.5);
-    z-index: 2;
+    z-index: 1;
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0.3px;
-    left: -2px;
-    width: 19px;
-    height: 19px;
-    // border-radius: 50% 50% 50% 50%;
-    border-radius: 90%;
-    // background: #1B1C30;
-    transform: translate(30px, 0);
-    opacity: 0;
-    transition: transform 0.1s ease, opacity 0.4s ease;
-    z-index: 3;
-  }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0.3px;
+      left: -2px;
+      width: 19px;
+      height: 19px;
+      border-radius: 50% 50% 50% 50%;
+      // border-radius: 90%;
+      // background: #1B1C30;
+      transform: translate(30px, 0);
+      opacity: 0;
+      transition: transform 0.1s ease, opacity 0.4s ease;
+      z-index :1;
+    }
 
   // Clouds
   .cloud {
@@ -111,7 +111,7 @@
     height: 8px;
     bottom: 3px;
     right: -25px;
-    animation: cloudMove 12s linear infinite;
+    animation: cloudMove 10s linear infinite;
 
     &::before {
       width: 10px;
@@ -164,19 +164,20 @@ html[data-theme='dark'] {
     background: linear-gradient(135deg, #0C1445 0%, #1A2980 100%);
     background-blend-mode: overlay, soft-light, normal, normal;
 
+    // reset the moon here
     &::before {
       transform: translateX(25px);
       background: radial-gradient(circle, #EDEDED 0%, #CCCCCC 70%),
         // Large craters
-        radial-gradient(circle at 30% 35%, rgba(3, 3, 3, 0.4) 0%, transparent 20%),
-        radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.4) 0%, transparent 15%),
+        // radial-gradient(circle at 30% 35%, rgba(3, 3, 3, 0.6) 0%, transparent 20%),
+        // radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.4) 0%, transparent 15%),
         // Smaller craters
-        radial-gradient(circle at 40% 50%, rgba(105, 105, 105, 0.3) 0%, transparent 8%),
-        radial-gradient(circle at 60% 30%, rgba(0, 0, 0, 0.3) 0%, transparent 10%),
-        radial-gradient(circle at 50% 70%, rgba(105, 105, 105, 0.3) 0%, transparent 6%);
+        // radial-gradient(circle at 40% 50%, rgba(0, 0, 0, 0.8) 0%, transparent 8%),
+        radial-gradient(circle at 30% 40%, rgba(0, 0, 0, 0.7) 40%, transparent 60%);
+        // radial-gradient(circle at 50% 70%, rgba(105, 105, 105, 0.1) 0%, transparent 6%)
       background-blend-mode: soft-light;
-      box-shadow: -2px 2px 0 0 #1B1C30,
-        inset -8px -8px 15px rgba(0, 0, 0, 0.2);
+      // box-shadow: -2px 2px 0 0 #1B1C30,
+      //   inset -8px -8px 15px rgba(0, 0, 0, 0.2);
     }
 
     &::after {
@@ -191,16 +192,18 @@ html[data-theme='dark'] {
     }
 
     .cloud {
-      background: rgba(180, 180, 180, 0.3);
+      background: rgba(180, 180, 180, 7);
     }
+
   }
 }
 
 // Star styles
 @for $i from 1 through 15 {
   .theme-toggle .star:nth-child(#{$i}) {
-    width: random(3) + 1px;
-    height: random(3) + 1px;
+
+    width: random(1) + 1px;
+    height: random(1) + 1px;
     top: random(100) + 0%;
     left: random(100) + 0%;
     animation-delay: -#{random(2)}s;
@@ -222,3 +225,5 @@ html[data-theme='dark'] {
     outline-offset: 2px;
   }
 }
+
+

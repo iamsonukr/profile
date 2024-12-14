@@ -6,7 +6,8 @@ import { useState, useEffect } from "react";
 import TrackVisibility from 'react-on-screen';
 import { AppWrap, MotionWrap } from "../../wrapper";
 import './home.scss'
-import ParallaxImage from "../../Parallax/ParallaxImage";
+import ParallaxImage from "../../components/Parallax/ParallaxImage";
+
 import StatsSection from "../../components/Counter/StatsSection";
 
 const Home = () => {
@@ -86,7 +87,7 @@ const Home = () => {
                 
            
                 {/* <ParallaxImage src='./assets/heroIMG.jpg' alt="Header Img" /> */}
-                <ParallaxImage src='./assets/heroArt.png' alt="Header Img"  />
+                <ParallaxImage src='./assets/Hero/HeroArt4.png' alt="Header Img"  />
               </div>
             }
           </TrackVisibility>

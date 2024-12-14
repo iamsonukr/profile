@@ -10,6 +10,9 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  position:sticky;
+  top: 60px;
+  z-index: 8;
 
   margin: 4rem 0 2rem;
 

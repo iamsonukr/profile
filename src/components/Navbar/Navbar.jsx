@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 // import { images } from '../../constants';
 import './Navbar.scss';
-import ThemeToggle from '../../ThemeToggle/ThemeToggle';
+import ThemeToggle from '../../components/ThemeToggle/ThemeToggle'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);

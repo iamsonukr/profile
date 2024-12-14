@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import SliderStory from "../../SliderStory/SliderStory";
+import SliderStory from '../../components/SliderStory/SliderStory'
 import "./Story.scss";
 import { AppWrap,MotionWrap } from "../../wrapper";
 
@@ -65,7 +65,7 @@ function Story() {
         initial="hidden"
         animate="visible"
         >
-        <SliderStory />
+        <SliderStory/>
       </motion.div>
         </motion.div>
     </motion.div>
