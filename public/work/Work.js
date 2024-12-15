@@ -290,7 +290,7 @@ export const myProjects = [
     },
     {
       id: 30,
-      imgUrl: './assets/websites/myBookSummary.png',
+      imgUrl: './assets/websites/myBookSummary2.jpg',
       name: 'mybooksummary',
       projectLink: 'https://my-book-summary.vercel.app/',
       codeLink: 'https://github.com/iamsonukr/myBookSummary',
