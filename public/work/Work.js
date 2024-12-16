@@ -269,7 +269,7 @@ export const myProjects = [
       
     //   -------------------------------- React Projects are here -------------------------------------
     {
-      id: 28,
+      id: 101,
       imgUrl: './assets/websites/foodiesFusion.png',
       name: 'foodiesFusion',
       projectLink: 'https://foodiesfusion.vercel.app/',
@@ -279,17 +279,17 @@ export const myProjects = [
       description: `FoodiesFusion  is MERN project that allow users to order food online. Implemented Admin Panel where admin can add, remove, update the food items and orders`,
     },
     {
-      id: 29,
+      id: 102,
       imgUrl: './assets/websites/cartWagonPng.png',
       name: 'Cart Wagon',
       projectLink: 'https://cart-wagon.vercel.app/',
       codeLink: 'https://github.com/iamsonukr/CartWagon',
       title: 'Cart Wagon',
-      tags: ['Set C', 'Frontend',,'Responsive design','HTML CSS & JS'],
+      tags: ['Set C', 'Frontend','Responsive design','HTML CSS & JS'],
       description: 'This is an e-commerce store with unique interface and layout.',
     },
     {
-      id: 30,
+      id: 103,
       imgUrl: './assets/websites/myBookSummary2.jpg',
       name: 'mybooksummary',
       projectLink: 'https://my-book-summary.vercel.app/',
@@ -299,7 +299,7 @@ export const myProjects = [
       description: 'This is a website for posting and reading famous books summary. ',
     },
     {
-      id: 31,
+      id: 104,
       imgUrl: './assets/websites/jacksparrow.png',
       name: 'spaceportfolio',
       projectLink: 'https://space-portfolio-pink.vercel.app/',
@@ -309,7 +309,7 @@ export const myProjects = [
       description: 'This is a portfolio website which is build on react using framer-motion for animation.',
     },
     {
-      id: 32,
+      id: 105,
       imgUrl: './assets/websites/narratoZone.png',
       name: 'Narratozone',
       projectLink: 'https://narratozone.vercel.app/',
@@ -320,7 +320,7 @@ export const myProjects = [
     },
 
     {
-      id: 33,
+      id: 106,
       imgUrl: './assets/websites/pixelMoments.png',
       name: 'pixelmoment',
       projectLink: 'https://pixelmoments.vercel.app/',
@@ -330,7 +330,7 @@ export const myProjects = [
       description: 'Pixel Moment is MERN project developed using framer motion. It offers photography service to the user for various events. Integrated with Razorpay for payment. and Email Js to send Booking confirmation mail to the client.',
     },
     {
-      id: 34,
+      id: 107,
       imgUrl: './assets/websites/greenGrosser.png',
       name: 'GreenGrosser',
       projectLink: 'https://green-grosser.vercel.app/',
@@ -340,14 +340,23 @@ export const myProjects = [
       description: 'This is a simple landing page for GreenGrosser. ',
     },
     {
-      id: 35,
+      id: 108,
       imgUrl: './assets/websites/lovelyBands.png',
       name: 'SportFlex',
       projectLink: 'https://lovelybandsfeat.vercel.app/',
       codeLink: 'https://github.com/iamsonukr/lovelybandsAdv',
       title: 'SportFlex',
-      tags: ['Set C','★','🚧', 'SportFlex', 'MERN','Under Construction'],
+      tags: ['Set C','★','🚧', 'MERN','Under Construction'],
       description: 'This is a e-commerce MERN Project in progress. It offers buying and selling of sportwear and allows custom design the lanyard.',
     },
-
+    {
+      id: 109,
+      imgUrl: './assets/websites/paula.png',
+      name: 'Paula Toole PR Consultancy',
+      projectLink: 'https://paula-toole-one.vercel.app/',
+      codeLink: 'https://github.com/iamsonukr/PaulaToole',
+      title: 'Paula Toole',
+      tags: ['Set C','★','ReactJs','Tailwind CSS','Frontend'],
+      description: 'Paula Toole is a PR and copywriting freelancer based in Leeds, UK. This is the UI prepared as per the client requirement using ReactJs and Tailwind CSS.',
+    },
   ]

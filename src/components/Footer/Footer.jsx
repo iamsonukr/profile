@@ -5,12 +5,9 @@ import './footer.scss';
 
 const Footer = () => {
   const navigationLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Work', href: '#work' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Contact', href: '#contact' },
-    { name: 'Graphic', href: 'https://drive.google.com/drive/folders/1pHjfh__ONSlFIUFGVX13im02p-7ANWEQ?usp=sharing' }
+    { name: 'Graphic Projects', href: 'https://drive.google.com/drive/folders/1pHjfh__ONSlFIUFGVX13im02p-7ANWEQ?usp=sharing' },
+    { name: 'More Projects', href: 'https://github.com/iamsonukr/64/blob/main/more.txt' },
+    { name: 'Students Projects', href: 'https://github.com/search?q=saved%3ASAITM+&type=repositories&saved_searches=%5B%7B%22name%22%3A%22SAITM%22%2C%22query%22%3A%22owner%3Aiamsonukr+saitm%22%7D%5D&expanded_query=owner%3Aiamsonukr+saitm+' },
   ];
 
   const socialLinks = [
@@ -57,8 +54,9 @@ const Footer = () => {
               <li key={name}>
                 <a 
                   href={href}
-                  aria-label={`Go to ${name} section`}
-                  target={name === "Graphic" ? "_blank" : "_self  "}
+                  aria-label={`Go to ${name}`}
+                  // target={name === "Graphic" ? "_blank" : "_self  "}
+                  target="_blank"
                 >
                   {name}
                 </a>
