@@ -49,7 +49,7 @@ const StatsSection = () => {
                 <div className="counter">
                     <CountUp
                         start={0}
-                        end={70}
+                        end={50}
                         duration={2}
                         separator=","
                         enableScrollSpy
@@ -70,7 +70,7 @@ const StatsSection = () => {
                 <div className="counter">
                     <CountUp
                         start={0}
-                        end={500}
+                        end={600}
                         duration={2}
                         separator=","
                         enableScrollSpy

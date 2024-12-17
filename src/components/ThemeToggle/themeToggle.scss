@@ -52,21 +52,21 @@
     z-index: 1;
   }
 
-    &::after {
-      content: '';
-      position: absolute;
-      top: 0.3px;
-      left: -2px;
-      width: 19px;
-      height: 19px;
-      border-radius: 50% 50% 50% 50%;
-      // border-radius: 90%;
-      // background: #1B1C30;
-      transform: translate(30px, 0);
-      opacity: 0;
-      transition: transform 0.1s ease, opacity 0.4s ease;
-      z-index :1;
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0.3px;
+    left: -2px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50% 50% 50% 50%;
+    // border-radius: 90%;
+    // background: #1B1C30;
+    transform: translate(30px, 0);
+    opacity: 0;
+    transition: transform 0.1s ease, opacity 0.4s ease;
+    z-index: 1;
+  }
 
   // Clouds
   .cloud {
@@ -169,12 +169,47 @@ html[data-theme='dark'] {
       transform: translateX(25px);
       background: radial-gradient(circle, #EDEDED 0%, #CCCCCC 70%),
         // Large craters
-        // radial-gradient(circle at 30% 35%, rgba(3, 3, 3, 0.6) 0%, transparent 20%),
-        // radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.4) 0%, transparent 15%),
+
         // Smaller craters
-        // radial-gradient(circle at 40% 50%, rgba(0, 0, 0, 0.8) 0%, transparent 8%),
-        radial-gradient(circle at 30% 40%, rgba(0, 0, 0, 0.7) 40%, transparent 60%);
-        // radial-gradient(circle at 50% 70%, rgba(105, 105, 105, 0.1) 0%, transparent 6%)
+        // radial-gradient(circle at 40% 50%, rgba(0, 0, 0, 0.8) 0%, transparent 8%)
+
+        // ---------- Half Moon ----------,
+        // radial-gradient(circle at 30% 40%, rgba(0, 0, 0, 0.7) 40%, transparent 60%);
+
+
+        // ----------Full Moon 🌕 --------------
+
+        radial-gradient(circle at 30% 35%, rgba(3, 3, 3, 0.6) 0%, transparent 20%),
+
+        /* Medium sized craters */
+        radial-gradient(circle at 70% 60%, rgba(0, 0, 0, 0.5) 0%, transparent 15%),
+        radial-gradient(circle at 25% 65%, rgba(0, 0, 0, 0.4) 0%, transparent 12%),
+        radial-gradient(circle at 60% 25%, rgba(0, 0, 0, 0.4) 0%, transparent 18%),
+
+        /* Smaller scattered craters */
+        radial-gradient(circle at 45% 45%, rgba(0, 0, 0, 0.3) 0%, transparent 8%),
+        radial-gradient(circle at 80% 40%, rgba(0, 0, 0, 0.3) 0%, transparent 10%),
+        radial-gradient(circle at 15% 20%, rgba(0, 0, 0, 0.3) 0%, transparent 7%),
+
+        /* Tiny craters for detail */
+        radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.2) 0%, transparent 5%),
+        radial-gradient(circle at 85% 30%, rgba(0, 0, 0, 0.2) 0%, transparent 4%),
+        radial-gradient(circle at 10% 40%, rgba(0, 0, 0, 0.2) 0%, transparent 6%),
+        radial-gradient(circle at 75% 75%, rgba(0, 0, 0, 0.2) 0%, transparent 5%),
+
+        /* Surface texture */
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%),
+
+        /* Subtle highlights */
+        radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+
+        /* General shading for depth */
+        linear-gradient(45deg, rgba(0, 0, 0, 0.2) 0%, transparent 70%);
+
+      // Test zone end ----------Full Moon 🌕 --------------
+
+
+
       background-blend-mode: soft-light;
       // box-shadow: -2px 2px 0 0 #1B1C30,
       //   inset -8px -8px 15px rgba(0, 0, 0, 0.2);
@@ -225,5 +260,3 @@ html[data-theme='dark'] {
     outline-offset: 2px;
   }
 }
-
-

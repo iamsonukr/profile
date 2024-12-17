@@ -33,8 +33,8 @@
   --brown-color: #46364a;
   --white-color: #ffffff;
 }
-
-[data-theme="dark"] {
+/* Dark theme */
+[data-theme="dark3"] {
   /* Dark theme variables */
   --primary-color: #1a1a1a;
   --secondary-color: #4e57d4;
@@ -43,6 +43,73 @@
   --gray-color: #b4b4b4;
   --brown-color: #6b5470;
   --white-color: #2d2d2d;
+}
+
+/* forest theme */
+[data-theme="dark3"] {
+  /* Main background - soft sage green */
+  --primary-color: #e8efe6;
+  
+  /* Accent - forest green */
+  --secondary-color: #2c6e49;
+  
+  /* Text color - deep forest */
+  --black-color: #233d4d;
+  
+  /* Supporting colors */
+  --lightGray-color: #d7e4d4;
+  --gray-color: #779985;
+  
+  /* Earthy accent */
+  --brown-color: #a86f4d;
+  
+  /* Container background */
+  --white-color: #f4f7f3;
+}
+
+/* pink theme */
+[data-theme="dark33"] {
+  /* Main background - soft blush pink */
+  --primary-color: #fef6f8;
+  
+  /* Accent - deep rose */
+  --secondary-color: #db7093;
+  
+  /* Text color - deep mauve */
+  --black-color: #4a3141;
+  
+  /* Supporting colors */
+  --lightGray-color: #f8e6eb;
+  --gray-color: #c4a5b5;
+  
+  /* Accent color */
+  --brown-color: #945c74;
+  
+  /* Container background */
+  --white-color: #fff9fa;
+}
+
+/* space theme */
+
+[data-theme="dark"] {
+  /* Main background - deep space black with slight blue tint */
+  --primary-color: #0a0b1a;
+  
+  /* Accent - nebula purple-blue */
+  --secondary-color: #6f4db3;
+  
+  /* Text color - starlight white */
+  --black-color: #e8ebff;
+  
+  /* Supporting colors */
+  --lightGray-color: #1c1e3a;
+  --gray-color: #aaaaaa;
+  
+  /* Accent color - cosmic dust */
+  --brown-color: #8b6d9c;
+  
+  /* Container background - dark matter */
+  --white-color: #13142b;
 }
 
 .app {
