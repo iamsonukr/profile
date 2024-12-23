@@ -75,5 +75,5 @@ function Story() {
 export default AppWrap(
   MotionWrap(Story, 'app__story'),
   'story',
-  'app__whitebg',
+  'app__primarybg',
 );

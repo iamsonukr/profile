@@ -1,0 +1,166 @@
+// Variables
+$layer-width: 400%;
+$transition-duration: 1000ms;
+
+// Mixins
+@mixin layer-base {
+  position: absolute;
+  width: $layer-width;
+  background-repeat: repeat-x;
+  background-size: 25% 100%;
+  left: 0;  // Ensure proper alignment
+}
+
+@mixin full-size {
+  width: 100%;
+  height: 100%;
+}
+
+// Keyframes
+@keyframes slideshow {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+// Main Styles
+.parallax-container {
+  position: relative;
+  @include full-size;
+  overflow: hidden;
+  // Set a fixed aspect ratio if needed
+  min-height: 400px;  // Minimum height to ensure proper scaling
+}
+
+.parallax-content {
+  position: absolute;
+  @include full-size;
+  overflow: hidden;
+  transition: all $transition-duration ease;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    @include full-size;
+    background: url("http://www.testomic.com/public/codepen-assets/img/paralax/background.jpg");
+    background-size: cover;
+    background-position: center bottom; // Align to bottom
+    z-index: -1;
+  }
+
+  // &.day {
+  //   filter: brightness(1) hue-rotate(30deg);
+  // }
+
+  // &.night {
+  //   filter: brightness(0.5) hue-rotate(1120deg);
+  // }
+
+  // testing zone
+
+  // &.day {
+  //   filter: brightness(1) hue-rotate(15deg);
+  // }
+  
+  // /* Night Mode */
+  // &.night {
+  //   filter: brightness(0.6) hue-rotate(240deg);
+  // }
+  
+  /* Alternative version with smoother transition */
+  &.day {
+    filter: brightness(0.7) 
+           hue-rotate(180deg)  /* Slight blue shift for morning sky */
+          //  hue-rotate(230deg)  /* Slight blue shift for morning sky */
+           saturate(1)      /* Natural color intensity */
+           contrast(1.8)      /* Subtle contrast for depth */
+           sepia(0.05);        /* Minimal warmth */
+    transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &.night {
+    filter: brightness(0.5)   /* Darker for a night-time effect */
+           hue-rotate(200deg)  /* Cooler tint, blue/greenish for night */
+           saturate(0.9)       /* Less saturated for nighttime colors */
+           contrast(1.4)       /* Higher contrast for dramatic shadows */
+           sepia(0.1);         /* Slight sepia for a cool moonlit effect */
+    transition: filter 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+}
+
+.parallax-layer {
+  @include layer-base;
+  pointer-events: none;  // Prevent interaction issues
+  
+  .layer-content {
+    @include full-size;
+    background-size: contain;  // Changed from cover to contain
+    background-position: bottom;  // Align to bottom
+  }
+
+  &.rocks2 {
+    height: 40%;
+    bottom: 15%;
+    z-index: 1;
+    
+    .layer-content {
+      background-image: url("http://www.testomic.com/public/codepen-assets/img/paralax/rocks2.png");
+      animation: slideshow var(--rocks2-speed) linear infinite;
+    }
+  }
+
+  &.rocks1 {
+    height: 35%;
+    bottom: 25%;
+    z-index: 2;
+    
+    .layer-content {
+      background-image: url("http://www.testomic.com/public/codepen-assets/img/paralax/rocks1.png");
+      animation: slideshow var(--rocks1-speed) linear infinite;
+    }
+  }
+
+  &.hills {
+    height: 40%;
+    bottom: 15%;
+    z-index: 3;
+    
+    .layer-content {
+      background-image: url("http://www.testomic.com/public/codepen-assets/img/paralax/hills.png");
+      animation: slideshow var(--hills-speed) linear infinite;
+    }
+  }
+
+  &.foreground {
+    height: 50%;
+    bottom: 0;
+    z-index: 4;
+    
+    .layer-content {
+      background-image: url("http://www.testomic.com/public/codepen-assets/img/paralax/foreground.png");
+      animation: slideshow 100s linear infinite;
+      animation: slideshow var(--foreground-speed) linear infinite;
+    }
+  }
+}
+
+.available {
+  font-size: 3rem;
+  color:var(--rev-white) !important;
+  animation: twinkle 5s ease-in-out infinite;
+  // color:var( --black-color) !important; 
+  background: linear-gradient(180deg, var(--black-color) 20%, var(--rev-white) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent; 
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.2; }
+  50% { opacity: 1; }
+  100% { opacity: 0.2; }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Star Effect</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> -->
+    <style>
+        /* Generated CSS from SCSS */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+            font-family: 'Lato', sans-serif;
+        }
+
+        #stars, #stars2, #stars3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: transparent;
+        }
+
+        #stars {
+            width: 1px;
+            height: 1px;
+            box-shadow: 146px 83px #FFF, 170px 328px #FFF, 1800px 700px #FFF, /* Multiple more shadows for effect */
+            800px 600px #FFF, 1230px 470px #FFF, 1000px 900px #FFF;
+            animation: animStar 50s linear infinite;
+        }
+
+        #stars2 {
+            width: 2px;
+            height: 2px;
+            box-shadow: 120px 150px #FFF, 200px 400px #FFF, /* Continue adding shadows for medium stars */
+            800px 700px #FFF, 1000px 600px #FFF, 1400px 500px #FFF;
+            animation: animStar 100s linear infinite;
+        }
+
+        #stars3 {
+            width: 3px;
+            height: 3px;
+            box-shadow: 300px 400px #FFF, 500px 700px #FFF, /* Continue adding for larger stars */
+            1300px 100px #FFF, 100px 800px #FFF;
+            animation: animStar 150s linear infinite;
+        }
+
+        #title {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #FFF;
+            font-weight: 300;
+            font-size: 50px;
+            letter-spacing: 10px;
+            transform: translateY(-50%);
+        }
+
+        #title span {
+            background: -webkit-linear-gradient(white, #38495a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes animStar {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-2000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div id="title">
+        <span>PURE CSS</span><br>
+        <span>PARALLAX PIXEL STARS</span>
+    </div>
+</body>
+</html>

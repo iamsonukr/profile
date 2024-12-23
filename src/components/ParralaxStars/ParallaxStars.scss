@@ -1,0 +1,189 @@
+.main {
+  height: 30vh;
+  margin: 0;
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #13142b 0%, #090A0F 100%);
+  font-family: system-ui, -apple-system, sans-serif;
+  position: relative;
+}
+
+.stars-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  perspective: 500px;
+}
+
+.star-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  transform-style: preserve-3d;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0) translateZ(0);
+  }
+  to {
+    transform: translateY(-500px) translateZ(0);
+  }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  20% { opacity: 0.4; }
+  50% { opacity: 1; }
+  80% { opacity: 0.4; }
+}
+
+@keyframes shootingStar {
+  0% {
+    transform: translateX(0) translateY(0) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1000px) translateY(-1000px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+// Tiny stars
+#stars1 {
+  width: 1px;
+  height: 1px;
+  box-shadow:
+    746px 483px 0.5px rgba(255, 255, 255, 0.9),
+    1170px 628px 0.5px rgba(255, 252, 229, 0.8),
+    1800px 700px 0.5px rgba(255, 255, 255, 0.9),
+    800px 600px 0.5px rgba(255, 254, 240, 0.8),
+    320px 250px 0.5px rgba(255, 255, 255, 0.7),
+    900px 400px 0.5px rgba(255, 254, 235, 0.8),
+    1400px 300px 0.5px rgba(255, 251, 227, 0.9),
+    800px 700px 0.5px rgba(255, 255, 255, 0.8),
+    500px 400px 0.5px rgba(255, 254, 235, 0.9),
+    1200px 700px 0.5px rgba(255, 253, 233, 0.8),
+    300px 200px 0.5px rgba(255, 255, 255, 0.9),
+    900px 800px 0.5px rgba(255, 252, 229, 0.8);
+  animation: animStar 50s linear infinite;
+}
+
+// Small stars
+#stars2 {
+  width: 2px;
+  height: 2px;
+  box-shadow:
+    320px 250px 1px rgba(255, 254, 235, 0.9),
+    900px 400px 1px rgba(255, 253, 233, 0.8),
+    1400px 300px 1px rgba(255, 255, 255, 0.9),
+    800px 700px 1px rgba(255, 252, 229, 0.8),
+    500px 400px 1px rgba(255, 254, 240, 0.9),
+    1200px 700px 1px rgba(255, 255, 255, 0.8);
+  animation: animStar 100s linear infinite, twinkle 3s ease-in-out infinite alternate;
+}
+
+// Medium stars
+#stars3 {
+  width: 2.5px;
+  height: 2.5px;
+  box-shadow:
+    500px 400px 2px rgba(255, 254, 235, 1),
+    1200px 700px 2px rgba(255, 253, 233, 0.9),
+    300px 200px 2px rgba(255, 255, 255, 1),
+    900px 800px 2px rgba(255, 252, 229, 0.9);
+  animation: animStar 150s linear infinite, twinkle 5s ease-in-out infinite alternate;
+}
+
+// Large bright stars
+#stars4 {
+  width: 3px;
+  height: 3px;
+  box-shadow:
+    746px 483px 2px rgba(255, 254, 235, 1),
+    1170px 628px 2px rgba(255, 253, 233, 0.9),
+    1800px 700px 2px rgba(255, 255, 255, 1),
+    800px 600px 2px rgba(255, 252, 229, 0.9);
+  animation: animStar 120s linear infinite, twinkle 4s ease-in-out infinite alternate;
+}
+
+// Distant tiny stars
+#stars5, #stars6, #stars7 {
+  width: 1px;
+  height: 1px;
+  box-shadow:
+    120px 250px 0.5px rgba(255, 254, 235, 0.5),
+    900px 400px 0.5px rgba(255, 253, 233, 0.4),
+    1400px 300px 0.5px rgba(255, 255, 255, 0.5),
+    800px 700px 0.5px rgba(255, 252, 229, 0.4);
+  animation: animStar 180s linear infinite;
+  opacity: 0.5;
+}
+
+// Mid-distance stars
+#stars8 {
+  width: 2px;
+  height: 2px;
+  box-shadow:
+    320px 250px 1px rgba(255, 254, 235, 0.8),
+    900px 400px 1px rgba(255, 253, 233, 0.7),
+    1400px 300px 1px rgba(255, 255, 255, 0.8),
+    800px 700px 1px rgba(255, 252, 229, 0.7);
+  animation: animStar 160s linear infinite, twinkle 6s ease-in-out infinite alternate;
+}
+
+// Bright foreground stars
+#stars9 {
+  width: 3px;
+  height: 3px;
+  box-shadow:
+    500px 600px 2px rgba(255, 254, 235, 1),
+    1200px 600px 2px rgba(255, 253, 233, 0.9),
+    300px 600px 2px rgba(255, 255, 255, 1),
+    900px 600px 2px rgba(255, 252, 229, 0.9);
+  animation: animStar 130s linear infinite, twinkle 7s ease-in-out infinite alternate;
+}
+
+// Shooting stars effect
+.shooting-star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  border-radius: 50%;
+  filter: blur(1px);
+  animation: shootingStar 8s linear infinite;
+
+  &:nth-child(1) { top: 10%; left: -10%; animation-delay: 0s; }
+  &:nth-child(2) { top: 20%; left: -10%; animation-delay: 3s; }
+  &:nth-child(3) { top: 30%; left: -10%; animation-delay: 6s; }
+}
+
+#title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-size: 50px;
+  letter-spacing: 10px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  z-index: 1;
+
+  span {
+    display: block;
+    font-size: 3rem;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(56,73,90,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: twinkle 5s ease-in-out infinite;
+
+    @media (max-width:728px) {
+      font-size: 2rem;
+    }
+  }
+
+}

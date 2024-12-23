@@ -23,16 +23,32 @@
 /* DARK MODE */
 
 
-:root {
-  /* Light theme variables */
-  --primary-color: #edf2f8;
-  --secondary-color: #313bac;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
-  --brown-color: #46364a;
-  --white-color: #ffffff;
-}
+    :root {
+      /* Light theme variables */
+      --primary-color: #edf2f8;
+      --secondary-color: #313bac;
+      --black-color: #030303;
+      --lightGray-color: #e4e4e4;
+      --gray-color: #6b7688;
+      --brown-color: #46364a;
+      --white-color: #ffffff;
+      --rev-white:#313bac;
+    }
+
+
+    /* REAL DARK */
+
+    [data-theme="dark"] {
+      --primary-color: #0a0b1a;
+      --secondary-color: #6f4db3;
+      --black-color: #e8ebff;
+      --lightGray-color: #1c1e3a;
+      --gray-color: #aaaaaa;
+      --brown-color: #8b6d9c;
+      --white-color: #13142b;
+      --rev-white:#ffffff;
+    }
+
 /* Dark theme */
 [data-theme="dark3"] {
   /* Dark theme variables */
@@ -91,26 +107,119 @@
 
 /* space theme */
 
-[data-theme="dark"] {
-  /* Main background - deep space black with slight blue tint */
+
+
+/* ----------------- THEMES --------------------- */
+
+[data-theme="minimal"] {
+  --primary-color: #fafafa;
+  --secondary-color: #2d2d2d;
+  --black-color: #232323;
+  --lightGray-color: #f0f0f0;
+  --gray-color: #666666;
+  --brown-color: #4a4a4a;
+  --white-color: #ffffff;
+}
+
+/* Neo Brutalism Theme - trending in modern web design */
+[data-theme="brutal"] {
+  --primary-color: #ffde59;
+  --secondary-color: #ff0f7b;
+  --black-color: #000000;
+  --lightGray-color: #f4f4f4;
+  --gray-color: #333333;
+  --brown-color: #ff5c00;
+  --white-color: #ffffff;
+}
+
+/* Ocean Breeze Theme */
+[data-theme="ocean"] {
+  --primary-color: #f0f7f9;
+  --secondary-color: #2f97c1;
+  --black-color: #1d3557;
+  --lightGray-color: #e5eff5;
+  --gray-color: #7d9aaa;
+  --brown-color: #455a64;
+  --white-color: #ffffff;
+}
+
+/* Cyberpunk Theme */
+[data-theme="cyber"] {
+  --primary-color: #0d0d0f;
+  --secondary-color: #00ff9f;
+  --black-color: #e6e6fa;
+  --lightGray-color: #1a1a24;
+  --gray-color: #7b68ee;
+  --brown-color: #ff00ff;
+  --white-color: #15151e;
+}
+
+/* Autumn Warmth Theme */
+[data-theme="autumn"] {
+  --primary-color: #fdf6e9;
+  --secondary-color: #d35400;
+  --black-color: #2c1810;
+  --lightGray-color: #f8ece1;
+  --gray-color: #9b7e6a;
+  --brown-color: #8b4513;
+  --white-color: #ffffff;
+}
+
+/* Deep Space Theme */
+[data-theme="deep-space"] {
   --primary-color: #0a0b1a;
-  
-  /* Accent - nebula purple-blue */
   --secondary-color: #6f4db3;
-  
-  /* Text color - starlight white */
   --black-color: #e8ebff;
-  
-  /* Supporting colors */
   --lightGray-color: #1c1e3a;
-  --gray-color: #aaaaaa;
-  
-  /* Accent color - cosmic dust */
+  --gray-color: #4a4f82;
   --brown-color: #8b6d9c;
-  
-  /* Container background - dark matter */
   --white-color: #13142b;
 }
+
+/* Nebula Theme */
+[data-theme="nebula"] {
+  --primary-color: #16132b;
+  --secondary-color: #ff61d8;
+  --black-color: #f0e7ff;
+  --lightGray-color: #251d47;
+  --gray-color: #9d89cc;
+  --brown-color: #c76ee2;
+  --white-color: #1d1832;
+}
+
+/* Mars Theme */
+[data-theme="mars"] {
+  --primary-color: #1a0f0f;
+  --secondary-color: #ff4500;
+  --black-color: #ffe6d5;
+  --lightGray-color: #2a1915;
+  --gray-color: #a65d57;
+  --brown-color: #8b3232;
+  --white-color: #201414;
+}
+
+/* Northern Lights Theme */
+[data-theme="aurora"] {
+  --primary-color: #0c1414;
+  --secondary-color: #39ff14;
+  --black-color: #e0fff2;
+  --lightGray-color: #152222;
+  --gray-color: #4a8b7d;
+  --brown-color: #2d6b5b;
+  --white-color: #111a1a;
+}
+
+/* Solar Eclipse Theme */
+[data-theme="eclipse"] {
+  --primary-color: #080808;
+  --secondary-color: #ffd700;
+  --black-color: #fff7e6;
+  --lightGray-color: #1a1a1a;
+  --gray-color: #7c7c7c;
+  --brown-color: #b8860b;
+  --white-color: #0d0d0d;
+}
+/* ----------------------------- THEMES -------------------------- */
 
 .app {
   background-color: var(--primary-color);
