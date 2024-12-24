@@ -1,15 +1,6 @@
 export const myProjects = [
   //   -------------------------------- React Projects are here -------------------------------------
-  {
-    id: 101,
-    imgUrl: './assets/websites/foodiesFusion.png',
-    name: 'foodiesFusion',
-    projectLink: 'https://foodiesfusion.vercel.app/',
-    codeLink: 'https://github.com/iamsonukr/FoodiesFusionFrontEnd',
-    title: 'FoodiesFusion',
-    tags: ['Set A','★', 'MERN','NodeJs','ReactJs','Payment-Integration','Admin Panel'],
-    description: `FoodiesFusion  is MERN project that allow users to order food online. Implemented Admin Panel where admin can add, remove, update the food items and orders`,
-  },
+ 
   {
     id: 102,
     imgUrl: './assets/websites/cartWagonPng.png',
@@ -30,6 +21,7 @@ export const myProjects = [
     tags: ['Set B', 'Frontend','HTML CSS & Js','Responsive Design'],
     description: 'This is a website for posting and reading famous books summary. ',
   },
+  
   {
     id: 104,
     imgUrl: './assets/websites/jacksparrow.png',
@@ -60,6 +52,16 @@ export const myProjects = [
     title: 'Pixel Moment',
     tags: ['Set A','★', 'Photography', 'MERN','EmailJs','Razorpay'],
     description: 'Pixel Moment is MERN project developed using framer motion. It offers photography service to the user for various events. Integrated with Razorpay for payment. and Email Js to send Booking confirmation mail to the client.',
+  },
+  {
+    id: 101,
+    imgUrl: './assets/websites/foodiesFusion.png',
+    name: 'foodiesFusion',
+    projectLink: 'https://foodiesfusion.vercel.app/',
+    codeLink: 'https://github.com/iamsonukr/FoodiesFusionFrontEnd',
+    title: 'FoodiesFusion',
+    tags: ['Set A','★', 'MERN','NodeJs','ReactJs','Payment-Integration','Admin Panel'],
+    description: `FoodiesFusion  is MERN project that allow users to order food online. Implemented Admin Panel where admin can add, remove, update the food items and orders`,
   },
   {
     id: 107,

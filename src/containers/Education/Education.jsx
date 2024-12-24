@@ -57,7 +57,7 @@ const Education = () => {
               key={index}
               className={`education__card ${index % 2 === 0 ? 'left' : 'right'}`}
               initial={{ 
-                x: index % 2 === 0 ? -100 : 100, 
+                // x: index % 2 === 0 ? -100 : 100, 
                 opacity: 0 
               }}
               whileInView={{ 

@@ -21,7 +21,7 @@ const ParallaxStars = () => {
   </div>
         <div id="title">
           <span>AVAILABLE </span>
-          <span>FOR FREELANCING</span>
+          <span>FOR FULLTIME ROLES</span>
         </div>
       </div>
     </div>

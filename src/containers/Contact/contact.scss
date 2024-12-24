@@ -179,7 +179,7 @@
             cursor: pointer;
             font-weight: 500;
             @include mobile{
-                // padding-top: calc(100vh - 100px);
+               padding:10px ;
                 font-size: 24px;
             }
 

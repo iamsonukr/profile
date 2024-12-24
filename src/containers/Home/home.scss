@@ -8,7 +8,7 @@
 
     @media (max-width:728px) {
         padding: 40px 10px;
-        
+
     }
 
     .home-content {
@@ -17,36 +17,39 @@
         position: relative;
         flex-wrap: wrap;
 
-        @media (max-width:728px) {
+        @media (max-width:920px) {
             flex-direction: column;
         }
 
         .home-text {
             flex: 1;
             margin-top: 10px;
-
+            @media (max-width:1418px) and (min-width:1350px) {
+                width: 50vw;
+            }
             @media (max-width:728px) {
-                order: 1333;
+                order: 2;
                 padding: 100px 10px 0px 10px;
-              
+
             }
 
-            h1{
-                color:  var(--black-color);
+            h1 {
+                color: var(--black-color);
             }
 
-            .tagline{
-                color:  var( --black-color  );
-                
+            .tagline {
+                color: var(--black-color);
+
             }
-            .myName{
+
+            .myName {
                 color: #313bac;
             }
 
-            a{
+            a {
                 text-decoration: none;
 
-                button{
+                button {
 
                     color: rgb(255, 255, 255);
                     padding: 10px 20px;
@@ -57,16 +60,16 @@
                     cursor: pointer;
                 }
             }
-            
-            div h1{
+
+            div h1 {
 
                 @media (max-width:728px) {
                     // flex-direction: column;
                     font-size: 43px;
-                   
+
                 }
             }
-            
+
         }
 
         .home-image {
@@ -75,8 +78,21 @@
             align-items: center;
             justify-content: center;
             flex: 1;
-            img{
-                width:400px;
+
+            // this is the image
+            @media (min-width: 720px) and (max-width: 1350px) {
+
+                order: -1;
+                margin-top: 20px;
+
+            }
+            @media (max-width:728px) {
+                order: -132;
+            }
+
+            img {
+                width: 400px;
+
                 // border-radius: 15% 0 15% 0;
                 // box-shadow: 15px 15px 10px #313bac ;
                 @media (max-width:720px) {
@@ -143,9 +159,7 @@
     margin-left: 25px;
 }
 
-.banner img {
-    
-}
+.banner img {}
 
 @keyframes updown {
     0% {
@@ -168,12 +182,15 @@
 //-------------------------------------- TESTING ZONE -------------------------------------
 
 .profile-image:hover {
-    box-shadow: 
-        10px 10px 20px rgba(29, 3, 135, 0.15),   /* Shadow from bottom-right (light black) */
-        -10px -10px 20px rgba(29, 3, 135, 0.15), /* Shadow from top-left (light black) */
-        10px -10px 20px rgba(29, 3, 135, 0.15),  /* Shadow from bottom-left (slightly darker) */
-        -10px 10px 20px rgba(29, 3, 135, 0.15);  /* Shadow from top-right (slightly darker) */
+    box-shadow:
+        10px 10px 20px rgba(29, 3, 135, 0.15),
+        /* Shadow from bottom-right (light black) */
+        -10px -10px 20px rgba(29, 3, 135, 0.15),
+        /* Shadow from top-left (light black) */
+        10px -10px 20px rgba(29, 3, 135, 0.15),
+        /* Shadow from bottom-left (slightly darker) */
+        -10px 10px 20px rgba(29, 3, 135, 0.15);
+    /* Shadow from top-right (slightly darker) */
 }
 
 // ANimation
-
