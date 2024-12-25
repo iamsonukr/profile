@@ -1,9 +1,9 @@
 import React from 'react';
 import './ParallaxStars.scss';
 
-const ParallaxStars = () => {
+const ParallaxStars = ({lineOne,lineTwo}) => {
   return (
-    <div className="main">
+    <div className="main" >
       <div className="stars-container">
       <div class="stars-container">
     <div class="star-layer" id="stars1"></div>
@@ -20,8 +20,8 @@ const ParallaxStars = () => {
     <div class="shooting-star"></div>
   </div>
         <div id="title">
-          <span>AVAILABLE </span>
-          <span>FOR FULLTIME ROLES</span>
+          <span>{lineOne} </span>
+          <span>{lineTwo}</span>
         </div>
       </div>
     </div>

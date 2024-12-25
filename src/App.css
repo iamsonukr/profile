@@ -199,6 +199,9 @@
     .copyright {
       padding: 2rem;
     }
+    .NoPhone{
+      display: none;
+    }
   }
   
 

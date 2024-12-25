@@ -9,6 +9,7 @@ import './home.scss'
 import ParallaxImage from "../../components/Parallax/ParallaxImage";
 
 import StatsSection from "../../components/Counter/StatsSection";
+import ParallaxStars from "../../components/ParralaxStars/ParallaxStars";
 
 const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -60,7 +61,6 @@ const Home = () => {
 
   return (
     <div className="banner" id="home">
-
       <div className="home-content">
 
         {/* home text content here */}
