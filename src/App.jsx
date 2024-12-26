@@ -31,7 +31,7 @@ function App() {
     {/* <Slider/> */}
     {/* <SliderStory/> */}
     {/* <ParallaxBackground/> */}
-    <ParallaxStars lineOne={"AVAILABLE"} lineTwo={"FOR FREELANCING"}/>
+    <ParallaxStars lineOne={"AVAILABLE"} lineTwo={"FOR FULLTIME ROLES"}/>
     <Footer/>
 
     </>

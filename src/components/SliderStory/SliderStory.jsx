@@ -4,6 +4,10 @@ import "./SliderStory.scss";
 
 const portfolioItems = [
   {
+    id: 3,
+    title: "Web Development Training - St Andrews Delhi",
+    image: "./assets/sliderImages/SAITM-B2-OCT-SonuTeaching.png"
+  },{
     id: 1,
     title: "Web Development Training - St Andrews Delhi OCT 2024",
     image: "./assets/sliderImages/SAITM-B1-OCT.jpg"
@@ -13,11 +17,7 @@ const portfolioItems = [
     title: "Web Development Training - St Andrews Delhi OCT 2024",
     image: "./assets/sliderImages/SAITM-B2-OCT.jpg"
   },
-  {
-    id: 3,
-    title: "Web Development Training - St Andrews Delhi",
-    image: "./assets/sliderImages/SAITM-B2-OCT-SonuTeaching.png"
-  },
+ 
   {
     id: 4,
     title: "Web Development Training - St Andrews Gurugram Dec 2024",

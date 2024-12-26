@@ -18,7 +18,7 @@ export const myProjects = [
     projectLink: 'https://my-book-summary.vercel.app/',
     codeLink: 'https://github.com/iamsonukr/myBookSummary',
     title: 'My Book Summary',
-    tags: ['Set B', 'Frontend','HTML CSS & Js','Responsive Design'],
+    tags: ['Set B', 'Frontend','HTML CSS & Js','Responsive Design', 'Bootstrap'],
     description: 'This is a website for posting and reading famous books summary. ',
   },
   
@@ -28,8 +28,8 @@ export const myProjects = [
     name: 'spaceportfolio',
     projectLink: 'https://space-portfolio-pink.vercel.app/',
     codeLink: 'https://github.com/iamsonukr/Space-Portfolio-React-Raw',
-    title: 'Portfolio using Framer-Motion',
-    tags: ['Set B' , 'MERN', 'NodeJs', 'Framer Motion','EmailJs','Responsive Design'],
+    title: 'Portfolio and framer motion.',
+    tags: ['Set B' , 'MERN', 'Framer Motion','EmailJs','Responsive Design'],
     description: 'This is a portfolio website which is build on react using framer-motion for animation.',
   },
   {
@@ -39,7 +39,7 @@ export const myProjects = [
     projectLink: 'https://narratozone.vercel.app/',
     codeLink: 'https://github.com/iamsonukr/NarratoZone',
     title: 'Narratozone',
-    tags: ['Set A','★','MERN','ReactJs','Axios','JWT','Multer','Cloudinary','Nodemailer','OTP-Verification','Context API','ChatGPT'],
+    tags: ['Set A','★','MERN','ReactJs','Axios','JWT','Multer','Cloudinary','Nodemailer','OTP-Verification','Context API','ChatGPT-Integration'],
     description: 'A blog platform where users can create account,write, edit, and delete blogs. Features email verification, JWT-secured access, and Cloudinary image storage. Integrated ChatGPT for Idea Generation.',
   },
   {
@@ -49,7 +49,7 @@ export const myProjects = [
     projectLink: 'https://pixelmoments.vercel.app/',
     codeLink: 'https://github.com/iamsonukr/PixelMomentFullstack',
     title: 'Pixel Moment',
-    tags: ['Set A','★', 'MERN','Photography', 'MERN','EmailJs','Razorpay','Framer Motion','Axios','Admin Panel'],
+    tags: ['Set A','★', 'MERN','Photography','EmailJs','Razorpay','Framer Motion','Axios','JWT-Authentication','Admin Panel'],
     description: 'Portfolio website for Pixel Moments,User can place order and make payment with razorpay and will recive booking emails on successful booking.Integrated admin panel to manage orders and assign photographers.',
   },
   {
@@ -59,8 +59,8 @@ export const myProjects = [
     projectLink: 'https://foodiesfusion.vercel.app/',
     codeLink: 'https://github.com/iamsonukr/FoodiesFusionFrontEnd',
     title: 'FoodiesFusion',
-    tags: ['Set A','★', 'MERN','NodeJs','ReactJs','Payment-Integration','Admin Panel','Context API'],
-    description: 'Online food ordering platform with an admin panel to manage items and orders.',
+    tags: ['Set A','★', 'MERN','NodeJs','ReactJs','Payment-Integration','SASS','Admin Panel','Context API'],
+    description: 'Online food ordering platform with an admin panel to manage items and orders. Integrated with Context API for state management. JWT Authentication for secure access .',
   },
   {
     id: 110,
@@ -69,8 +69,8 @@ export const myProjects = [
     projectLink: 'https://pixelmomentsadmin.vercel.app/',
     codeLink: 'https://github.com/iamsonukr/PixelMomentFullstack',
     title: 'PixelMoment Admin Dashoard',
-    tags: ['Set A','★','MERN','Frontend'],
-    description: 'Comprehensive admin dashboard to oversee orders, allocate photographers, and track booking statuses efficiently.',
+    tags: ['Set A','★','MERN','Admin Panel', 'JWT - Authentication', 'Axios' ,'Renderer','Vercel'],
+    description: 'Admin dashboard for Pixel Moments where admin can see all the orderes, update their status. Admin can create delete and update the photographer and assign them for various events. ',
   },
   {
     id: 111,
@@ -79,8 +79,8 @@ export const myProjects = [
     projectLink: 'https://food-fusion-full-stack.vercel.app/',
     codeLink: 'https://github.com/iamsonukr/FoodFusionFullStack',
     title: 'FoodiesFusion Admin Dashboard',
-    tags: ['Set A','★','MERN','ReactJs','Frontend'],
-    description: 'Feature-rich dashboard for managing food orders, updating booking statuses, and customizing the menu seamlessly.',
+    tags: ['Set A','★','MERN','Admin Panel', 'JWT - Authentication', 'Axios' ,'Renderer','Vercel'],
+    description: 'Admin panel for FoodiesFusion where admin can get all the order details made by customers, update their order status, add and remove food items. ',
   },
   {
     id: 112,
@@ -89,8 +89,8 @@ export const myProjects = [
     projectLink: 'yarpacom-dash.vercel.app',
     codeLink: 'https://github.com/iamsonukr/Yarpacom-Dash',
     title: 'Yarpacom Admin Dashboard',
-    tags: ['Set A','★','MERN','ReactJs','Frontend'],
-    description: 'Efficient admin tool for managing cleansers, customer details, orders, payments, and booking updates.',
+    tags: ['Set A','★','MERN','NextJS','Dynamicform', 'DynamicTable', 'tailwindCSS ', 'MongoDB',' JSX' ],
+    description: 'Efficient admin tool for managing cleaners, customer details, orders, payments, and booking updates.',
   },
   {
     id: 107,
@@ -109,7 +109,7 @@ export const myProjects = [
     projectLink: 'https://paula-toole-one.vercel.app/',
     codeLink: 'https://github.com/iamsonukr/PaulaToole',
     title: 'Paula Toole',
-    tags: ['Set A','★','ReactJs','Tailwind CSS','Frontend','PR Agency'],
+    tags: ['Set A','★','ReactJs','Tailwind CSS','Frontend','PR Agency','PortFolio'],
     description: 'A PR and copywriting consultancy site tailored to client specifications, built using ReactJs and Tailwind CSS.',
   },
   {
@@ -118,8 +118,8 @@ export const myProjects = [
     name: 'Lovely Bands',
     projectLink: 'https://lovelybandsfeat.vercel.app/',
     codeLink: 'https://github.com/iamsonukr/lovelybandsAdv',
-    title: 'SportFlex',
-    tags: ['Set A','★','🚧','MERN','Under Construction'],
+    title: 'Lovely Bands',
+    tags: ['Set A','★','⏳ In Progress','MERN','Custom Lanyard Design','E-commerce'],
     description: 'An ongoing MERN project for e-commerce, offering sportswear with options for customized lanyards.',
   },
   {
@@ -129,17 +129,17 @@ export const myProjects = [
     projectLink: 'https://sports-flex.vercel.app/',
     codeLink: 'https://github.com/iamsonukr/SportFlex',
     title: 'SportFlex',
-    tags: ['Set A','★','MERN','Frontend','Ecomm'],
+    tags: ['Set A','★','⏳ In Progress','MERN','Frontend','Ecomm',],
     description: 'E-commerce platform for sportswear shopping with an intuitive user interface.',
   },
   {
     id: 114,
     imgUrl: './assets/websites/Emoticons.png',
     name: 'Emoticons',
-    projectLink: 'https://paula-toole-one.vercel.app/',
+    projectLink: 'https://emoticonsolutions.com/',
     codeLink: 'https://github.com/iamsonukr/Emoticon-Web',
     title: 'Emoticons',
-    tags: ['Set A','★','NextJs','Frontend','TailwindCSS'],
+    tags: ['Set A','★','NextJs','Frontend','TailwindCSS','Responsive Design','Portfolio','SSR  '],
     description: 'A sleek and modern website designed for a digital agency, built with NextJs and TailwindCSS.',
   },
   
@@ -152,7 +152,7 @@ export const myProjects = [
       projectLink: 'https://binmantrash.com',
       codeLink: 'https://binmantrash.com',
       title: 'Binman Trash Cleaning Service ',
-      tags: ['Set B', 'WordPress','Elementor','CSS & JS','Lpagery','Cleaning Service'],
+      tags: ['Set B', 'WordPress','Elementor Pro','CSS & JS','Lpagery','Cleaning Service'],
       description: 'Binman trash cleaning service is a Texas based company that offers comprehensive trash chute installation and repair services to meet waste management needs.',
     },
     {
@@ -162,7 +162,7 @@ export const myProjects = [
       projectLink: 'https://jagannathprasad.in/',
       codeLink: 'https://jagannathprasad.in/',
       title: 'Jagannath Prashad',
-      tags: ['Set C','WordPress','Elementor','CSS & JS','Consultancy'],
+      tags: ['Set C','WordPress','CMS','Elementor Pro','CSS & JS','Consultancy'],
       description: 'Jagannath Prashad is consultancy website which provides visa and other services for overseas education',
     },
     {
@@ -172,7 +172,7 @@ export const myProjects = [
       projectLink: 'https://predictsmile.com/',
       codeLink: 'https://github.com/example/project-six',
       title: 'Predict Smile',
-      tags: ['Set C', 'WordPress','Elementor','CSS & JS','Scheduling','Medical Service'],
+      tags: ['Set C', 'WordPress','CMS','Elementor Pro','CSS & JS','Scheduling','Medical Service'],
       description: 'Predict Smile website is of Dr. Mora who provides training in dental field. This website allows booking appointment, buying course, making payment etc.',
     },
     {
@@ -182,7 +182,7 @@ export const myProjects = [
       projectLink: 'https://aswinikar.com/',
       codeLink: 'https://aswinikar.com/',
       title: 'Dr. Aswini Kumar Kar',
-      tags: ['Set C','WordPress','Elementor','CSS & JS','Consultancy','Portfolio'],
+      tags: ['Set C','WordPress','CMS','Elementor Pro','CSS & JS','Consultancy','Portfolio'],
       description: 'This website is for Dr. Aswini Kumar Kar clinic which provides dental care, a prosthodontics expert with extensive research, over 20 published papers, and a book chapter authored.',
     },
     {
@@ -192,7 +192,7 @@ export const myProjects = [
       projectLink: 'https://artebrities.com/',
       codeLink: 'artebrities',
       title: 'Artebrities',
-      tags: ['Set C', 'Wordpress','Ecommerce','Woocomerce','Decoratives'],
+      tags: ['Set C', 'Wordpress','CMS','Ecommerce','Woocomerce','Decoratives'],
       description: 'Artebrities has artisans dedicated to crafting anything and everything from resin and also provide unique home decor products, gifting items, and personalized creations',
     },
     {
@@ -202,7 +202,7 @@ export const myProjects = [
       projectLink: 'https://gtransservice.kz/en/',
       codeLink: 'https://github.com/example/project-three',
       title: 'G-Trans Service',
-      tags: ['Set B', 'WordPress','Elementor','CSS & JS'],
+      tags: ['Set B', 'WordPress','CMS','Elementor Pro','CSS & JS'],
       description: 'G-Trans Service implement the project on construction and operation of the Transport and Logistics and Industrial Hub in Almaty region (the "Hub")',
       
     },
@@ -213,7 +213,7 @@ export const myProjects = [
       projectLink: 'https://uniquebags.in/',
       codeLink: 'https://github.com/example/project-seven',
       title: 'Unique Bags',
-      tags: ['Set C', 'WordPress','Elementor','CSS & JS'],
+      tags: ['Set C', 'WordPress','CMS','Elementor Pro','CSS & JS','Redesigning'],
       description: 'Unique Bags specialist in customized manufacturing of eco friendly nonwoven bags.',
     },
     {
@@ -223,7 +223,7 @@ export const myProjects = [
       projectLink: 'https://www.ssbexport.com/',
       codeLink: 'https://github.com/example/project-ten',
       title: 'SSB Exports',
-      tags: ['Set C', 'WordPress','Elementor','CSS & JS'],
+      tags: ['Set C', 'WordPress','CMS','Elementor Pro','CSS & JS','Speed-optimization','Photoshop'],
       description: 'SSB exports are Indian Food Grains Exporter which are running there bussiness in more than 25 countries',
     },
     {
@@ -233,7 +233,7 @@ export const myProjects = [
       projectLink: 'https://isdg.in/',
       codeLink:  'https://isdg.in/',
       title: 'ISDG',
-      tags: ['Set B', 'WordPress','Elementor','CSS & JS'],
+      tags: ['Set B', 'WordPress','CMS','Elementor Pro','CSS & JS'],
       description: 'This is the official website of Institute for Sustainable Development and Governance which is a is a research and advocacy organisation .'
     },
     {
@@ -243,7 +243,7 @@ export const myProjects = [
       projectLink: 'https://edelevate.com/',
       codeLink: 'https://edelevate.com/',
       title: 'EdElivate',
-      tags: ['Set C', 'WordPress','Elementor','CSS & JS'],
+      tags: ['Set C', 'WordPress','CMS','Elementor Pro ','Custom HTML, CSS & JS'],
       description: 'EdElevate experts help students secure admissions and scholarships at Ivy League and top universities across the world.',
     },
     {
@@ -253,7 +253,7 @@ export const myProjects = [
       projectLink: 'https://besttransplanter.com/',
       codeLink: 'https://besttransplanter.com/',
       title: 'Best Transplanter',
-      tags: ['Set C', 'WordPress','Elementor','CSS & JS','Speed Optimization'],
+      tags: ['Set C', 'WordPress','CMS','Elementor Pro','CSS & JS','Speed Optimization'],
       description: 'Best Transplanter specialize in the production and distribution of agricultural machinery: transplanters, cultivation and harvesting machines, mulchers and flowerbeds.',
     
     },
@@ -264,7 +264,7 @@ export const myProjects = [
       projectLink: 'https://drrupinderkaur.com/ ',
       codeLink: 'https://github.com/example/project-ten',
       title: 'Dr Rupinder Kaur',
-      tags: ['Set C', 'Tag20','Custom CSS'],
+      tags: ['Set C', 'Wordpress','CMS','Custom CSS',"Responsive Design","Elementor Pro"],
       description: 'Dr Rupinder Kaur is a personal development coach who help the individual to learn communication, leadership, teamwork, emotional intelligence and other skills.',
     },
     {
@@ -274,7 +274,7 @@ export const myProjects = [
       projectLink: 'https://kaps.co.in/',
       codeLink: 'https://github.com/example/project-ten',
       title: 'KAPS',
-      tags: ['Set B', 'WordPress','Elementor','CSS & JS'],
+      tags: ['Set B', 'WordPress','Elementor Pro','CMS','CSS & JS','WP-Optimize'],
       description: 'KAPS is a leading provider of soft skills training and development, mentoring, finance consultancy, coaching, and placement services tailored for the finance and HR sectors. ',
     },
     {
@@ -284,7 +284,7 @@ export const myProjects = [
       projectLink: 'https://www.advtics.com/',
       codeLink: 'https://www.advtics.com/',
       title: 'Advtics',
-      tags: ['Set C', 'WordPress','Elementor','CSS & JS','Speed Optimization'],
+      tags: ['Set C', 'WordPress','Elementor Pro','CSS & JS','Speed Optimization','Airlift'],
       description: 'ADVANCED ANALYTICS is Saudi Owned Consulting Company based and registered in Saudi Arabia.',
      
     },
@@ -295,7 +295,7 @@ export const myProjects = [
       projectLink: 'https://alburaqindustries.com/',
       codeLink: 'https://github.com/example/project-ten',
       title: 'Alburaq',
-      tags: ['Set B', 'WordPress','Elementor','CSS & JS','Speed Optimization','Redesigning','Photoshop'],
+      tags: ['Set B', 'WordPress','Elementor Pro','CMS','CSS & JS','Speed Optimization','Redesigning','Photoshop'],
       description: 'Al Buraq is the top Middle East Finished Leather, Synthetic Leather, supplier, is specialized in the creation, manufacture, and exporter. ',
     },
     {
@@ -305,7 +305,7 @@ export const myProjects = [
       projectLink: 'https://www.ayaztanners.com/',
       codeLink: 'https://www.ayaztanners.com/',
       title: 'Ayaz Tanners',
-      tags: ['Set C', 'WordPress','Elementor','CSS & JS','Speed Optimization'],
+      tags: ['Set C', 'WordPress','Elementor Pro','CSS & JS','Speed Optimization','Airlift'],
       description: 'Ayaz Tanners offer a high-quality range of finished leathers,  ',
     },
     {
@@ -315,7 +315,7 @@ export const myProjects = [
       projectLink: 'https://skyrisechutes.com',
       codeLink: 'https://github.com/example/project-ten',
       title: 'Skyrise Chutes',
-      tags: ['Set B', 'WordPress','Elementor','LPagery','CSS & JS','Speed Optimization'],
+      tags: ['Set B', 'WordPress','Elementor Pro','CMS','Redesigning','LPagery','CSS & JS','Speed Optimization'],
       description: 'Skyrise Chutes is a Austin based company which provide the solution for building’s chute system.',
     },
     // {
@@ -335,7 +335,7 @@ export const myProjects = [
       projectLink: 'https://inaraglobal.com/',
       codeLink: 'https://github.com/example/project-ten',
       title: 'Inara Global',
-      tags: ['Set B', 'WordPress','Elementor','Redesigning'],
+      tags: ['Set B', 'WordPress','Elementor Pro','Redesigning','Photoshop','CMS'],
       description: 'Inara Global are a manufacturer-consolidator-importer-exporter for complete range of equestrian items such as saddle,bridle , halter, etc.'
     },
     {
@@ -345,7 +345,7 @@ export const myProjects = [
       projectLink: ' https://exsure.in/ ',
       codeLink: ' https://exsure.in/',
       title: 'ExSure',
-      tags: ['Set C', 'WordPress','Elementor','Custom CSS'],
+      tags: ['Set C', 'WordPress','Elementor Pro','Custom CSS','CMS'],
       description: `ExSURE are developing India's first of its kind innovation involving exosome-based anti-cancer drug delivery platform targeting relapse-causing cancer stem cells.'`,
     },
     {
@@ -355,7 +355,7 @@ export const myProjects = [
         projectLink: 'https://bestwebteam.com/',
         codeLink: 'https://bestwebteam.com/',
         title: 'Best Web Team',
-        tags: ['Set B', 'WordPress','Elementor','Revolution','Ohio'],
+        tags: ['Set B', 'WordPress','Elementor Pro','Revolution','Ohio','CMS'],
         description: 'This website is the portfolio website for a Web Development agency which offers unique design web development solutions. ',
       },
       
@@ -367,7 +367,7 @@ export const myProjects = [
         projectLink: 'https://jaanlondon.com/',
         codeLink: 'https://jaanlondon.com/',
         title: 'Jaan London',
-        tags: ['Set B', 'Shopify'],
+        tags: ['Set B', 'Shopify','E-Comm','Liquid','Photoshop','Image-Compression'],
         description: 'Jaan London is an e-commerce store based on United Kingdom, which sells ready-made cloths pecialises in eastern fashion with a touch of the west!.',
       },
       { 
@@ -377,7 +377,7 @@ export const myProjects = [
         projectLink: 'https://fankarihouse.com/',
         codeLink: 'https://fankarihouse.com/',
         title: 'Fankari House',
-        tags: ['Set B', 'Shopify'],
+        tags: ['Set B', 'Shopify','Liquid','E-Comm','CMS','Photoshop','Image Compression'],
         description: 'Fankari House offers unique design wall posters, suitable for walls of all types.',
       },
       {
@@ -387,7 +387,7 @@ export const myProjects = [
         projectLink: 'https://www.thehomeplunge.com/',
         codeLink: 'https://www.thehomeplunge.com/',
         title: 'The Homeplunge',
-        tags: ['Set B', 'Shopify','HTML & CSS'],
+        tags: ['Set B', 'Shopify','HTML & CSS','E-Comm','CMS','Image Comppression', 'Liquid'],
         description: 'Homeplunge deals with the unique device HomePlunge which is attachment with bathtub used to provide ice cold water for bathing.',
       },
       {
@@ -397,7 +397,7 @@ export const myProjects = [
         projectLink: 'https://www.coverhome.ma/',
         codeLink: 'https://www.coverhome.ma/',
         title: 'Coverhome',
-        tags: ['Set C', 'Shopify','HTML & CSS'],
+        tags: ['Set C', 'Shopify','Liquid','HTML & CSS','E-Comm','CMS'],
         description: 'This website of coverhome deals with furniture, interior designing products etc. ',
       },
       {
@@ -407,8 +407,8 @@ export const myProjects = [
         projectLink: 'https://hikian.com/',
         codeLink: 'https://hikian.com//',
         title: 'Hikian ',
-        tags: ['Set C', 'Shopify','HTML & CSS'],
-        description: 'Hiken is a Finland based company which sells natural organic product. ',
+        tags: ['Set C', 'Shopify','Liquid','HTML & CSS','E-Comm'],
+        description: 'Hiken is a Finland based company which sells natural organic product and different types of honey. ',
       },
       
     
